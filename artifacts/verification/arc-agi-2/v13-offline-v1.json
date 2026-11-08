@@ -1,0 +1,229 @@
+{
+ "keys": 30,
+ "seeds": {
+  "1": {
+   "HA": 6.667,
+   "v13_q38": 8.667,
+   "v13_q38_then_q36": 8.667,
+   "changed_tasks": {
+    "dbff022c": [
+     0.0,
+     1.0
+    ],
+    "f931b4a8": [
+     0.0,
+     1.0
+    ]
+   },
+   "conf": {
+    "dbff022c": -4.27,
+    "3dc255db": -5.19,
+    "2b83f449": -11.991,
+    "5545f144": -5.965,
+    "dd6b8c4b": -0.582,
+    "f931b4a8": -4.221,
+    "53fb4810": -0.425,
+    "332f06d7": 4.928,
+    "d35bdbdc": -2.078,
+    "58f5dbd5": 5.368,
+    "faa9f03d": -3.251,
+    "dfadab01": 1.056,
+    "80a900e0": null,
+    "581f7754": null,
+    "446ef5d2": null,
+    "7b0280bc": -3.833,
+    "a251c730": 3.203,
+    "2c181942": -11.548,
+    "4e34c42c": null,
+    "7ed72f31": -15.618,
+    "b6f77b65": 0.799,
+    "38007db0": 7.994,
+    "4a21e3da": null,
+    "142ca369": -13.216,
+    "cb2d8a2c": -18.058,
+    "6e4f6532": null,
+    "13e47133": null,
+    "e12f9a14": -22.186,
+    "3e6067c3": -15.438,
+    "e3721c99": null
+   }
+  },
+  "2": {
+   "HA": 7.0,
+   "v13_q38": 9.0,
+   "v13_q38_then_q36": 8.667,
+   "changed_tasks": {
+    "dbff022c": [
+     0.0,
+     1.0
+    ],
+    "f931b4a8": [
+     0.0,
+     1.0
+    ]
+   },
+   "conf": {
+    "dbff022c": -2.944,
+    "3dc255db": -3.52,
+    "2b83f449": -12.366,
+    "5545f144": -8.636,
+    "dd6b8c4b": 3.541,
+    "f931b4a8": -3.619,
+    "53fb4810": 2.481,
+    "332f06d7": 5.222,
+    "d35bdbdc": -5.535,
+    "58f5dbd5": 6.678,
+    "faa9f03d": -5.405,
+    "dfadab01": -2.169,
+    "80a900e0": null,
+    "581f7754": -15.569,
+    "446ef5d2": null,
+    "7b0280bc": -1.504,
+    "a251c730": 2.179,
+    "2c181942": -7.117,
+    "4e34c42c": null,
+    "7ed72f31": -5.912,
+    "b6f77b65": 0.224,
+    "38007db0": 7.997,
+    "4a21e3da": -13.584,
+    "142ca369": -9.282,
+    "cb2d8a2c": -15.187,
+    "6e4f6532": null,
+    "13e47133": null,
+    "e12f9a14": null,
+    "3e6067c3": -16.523,
+    "e3721c99": null
+   }
+  },
+  "3": {
+   "HA": 6.667,
+   "v13_q38": 8.667,
+   "v13_q38_then_q36": 8.667,
+   "changed_tasks": {
+    "dbff022c": [
+     0.0,
+     1.0
+    ],
+    "f931b4a8": [
+     0.0,
+     1.0
+    ]
+   },
+   "conf": {
+    "dbff022c": 1.199,
+    "3dc255db": -4.29,
+    "2b83f449": null,
+    "5545f144": -7.263,
+    "dd6b8c4b": -1.378,
+    "f931b4a8": -4.171,
+    "53fb4810": 1.558,
+    "332f06d7": 4.425,
+    "d35bdbdc": -3.532,
+    "58f5dbd5": 7.149,
+    "faa9f03d": -4.749,
+    "dfadab01": -1.921,
+    "80a900e0": -30.046,
+    "581f7754": -14.988,
+    "446ef5d2": null,
+    "7b0280bc": -0.555,
+    "a251c730": -1.966,
+    "2c181942": -16.4,
+    "4e34c42c": null,
+    "7ed72f31": -6.492,
+    "b6f77b65": -0.707,
+    "38007db0": 7.977,
+    "4a21e3da": -14.803,
+    "142ca369": -14.026,
+    "cb2d8a2c": -14.218,
+    "6e4f6532": null,
+    "13e47133": null,
+    "e12f9a14": null,
+    "3e6067c3": -14.868,
+    "e3721c99": -8.643
+   }
+  }
+ },
+ "HA": {
+  "per_seed": [
+   6.667,
+   7.0,
+   6.667
+  ],
+  "mean": 6.778,
+  "sd": 0.192
+ },
+ "v13_q38": {
+  "per_seed": [
+   8.667,
+   9.0,
+   8.667
+  ],
+  "mean": 8.778,
+  "sd": 0.192
+ },
+ "v13_q38_then_q36": {
+  "per_seed": [
+   8.667,
+   8.667,
+   8.667
+  ],
+  "mean": 8.667,
+  "sd": 0.0
+ },
+ "F_reference": {
+  "mean": 7.61,
+  "per_seed": [
+   9.0,
+   5.83,
+   8.0
+  ],
+  "source": "gcp-e1-result-v1.json"
+ },
+ "program_tasks_q38": {
+  "dfadab01": [
+   {
+    "rep": 1,
+    "correct": [
+     false
+    ]
+   }
+  ],
+  "53fb4810": [
+   {
+    "rep": 1,
+    "correct": [
+     true
+    ]
+   },
+   {
+    "rep": 0,
+    "correct": [
+     true
+    ]
+   }
+  ],
+  "f931b4a8": [
+   {
+    "rep": 0,
+    "correct": [
+     true,
+     true
+    ]
+   }
+  ],
+  "dbff022c": [
+   {
+    "rep": 0,
+    "correct": [
+     true
+    ]
+   }
+  ]
+ },
+ "confident_threshold": 5.0,
+ "caveats": [
+  "P0b q38 completed 26/60 round-1 jobs in 40 min (1 Colab GPU); programs exist only for tasks whose job finished, so this is a lower bound on coverage and an upper bound on nothing else",
+  "keys30 are public-eval tasks; P0b used colour/rotation augmentation but contamination of Qwen3.8 on public ARC-AGI-2 eval cannot be excluded; hidden test only verifiable on the public LB",
+  "single program sample per (task, rep); program precision q38 4/5 on verified"
+ ]
+}

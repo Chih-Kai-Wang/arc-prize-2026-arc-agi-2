@@ -1,0 +1,143 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-progsynth-v3",
+ "at": "2026-10-17T02:30:31.845778+00:00",
+ "gates": {
+  "build_hashes_match": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "nvarc_assembly_no_error": true,
+  "nvarc_four_workers_clean": true,
+  "llm_not_skipped": true,
+  "llm_setup_ok": true,
+  "llm_jobs_recorded": true,
+  "llm_returned_before_end": true,
+  "notebook_v13_done": true,
+  "test_submission_valid": true,
+  "eval_v13_submission_valid": true,
+  "keys30_verified_correct": true,
+  "precision_floor": false,
+  "v3_forcing_active": true,
+  "v3_forced_executed_ge3": true,
+  "v3_forced_precision_floor": false,
+  "v2_baseline_pinned": true,
+  "v3_replay_mean_ge_v2": false,
+  "v3_forced_contributed": true,
+  "v3_forcing_not_negative": true,
+  "v3_no_lost_correct_nvarc": false,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": false
+ },
+ "facts": {
+  "notebook_sha256": "ae72e3e54c22053077897994b6c0bd3cba6b44f5e486885d9e39ff06b8042c5f",
+  "src_dir": "runs/arc-agi-2/v13/src3",
+  "commit_wall_seconds": 7200,
+  "ship_rule": {
+   "verified_rows": 5,
+   "verified_correct_rows": 2,
+   "keys30_verified_correct_rows": 1,
+   "verified_tasks": [
+    "332f06d7",
+    "3dc255db",
+    "53fb4810",
+    "981571dc",
+    "d35bdbdc"
+   ],
+   "correct_tasks": [
+    "332f06d7",
+    "981571dc"
+   ],
+   "keys30_correct_tasks": [
+    "332f06d7"
+   ],
+   "false_positive_tasks": [
+    "3dc255db",
+    "53fb4810",
+    "d35bdbdc"
+   ],
+   "correctness_measured": true,
+   "precision": 0.4
+  },
+  "v3": {
+   "forced_executed": 13,
+   "forced_verified": 5,
+   "forced_correct": 2,
+   "v2_replay_mean": 8.778,
+   "replay": "artifacts/verification/arc-agi-2/v13/replay-v3-full.json",
+   "replay_mean": 7.111,
+   "replay_rep": null,
+   "forced_correct_task_ha_gain": {
+    "332f06d7": 1.0,
+    "981571dc": 0.0
+   },
+   "replay_excl": "artifacts/verification/arc-agi-2/v13/replay-v3-excl-forced.json",
+   "forcing_paired_delta": 0.333,
+   "lost_correct_nvarc_any": true
+  },
+  "summary": {
+   "jobs": 25,
+   "finished_stop": 0,
+   "finished_length": 13,
+   "aborted": 12,
+   "verified": 5,
+   "verified_from_reasoning": 0,
+   "forced": 13,
+   "forced_ok": 13,
+   "verified_from_forced": 5,
+   "verified_tasks": 5,
+   "tokens": 898818,
+   "verified_correct": 2,
+   "verified_correct_from_reasoning": 0,
+   "verified_correct_from_forced": 2
+  },
+  "cap": 64000,
+  "conc_effective": 13,
+  "effort": "xhigh",
+  "gen_seconds": 4318,
+  "aborted_streams": 12,
+  "server": {
+   "mtp": 2,
+   "eager": false,
+   "startup_seconds": 401,
+   "kv_tokens": 331200
+  },
+  "model_hash": {
+   "files": 67,
+   "missing": [],
+   "mismatched": [],
+   "done": 215.7
+  },
+  "order": {
+   "n": 34,
+   "first": [
+    "20270e3b",
+    "e8686506",
+    "28a6681f",
+    "981571dc",
+    "dbff022c",
+    "3dc255db",
+    "2b83f449",
+    "5545f144",
+    "dd6b8c4b",
+    "f931b4a8"
+   ],
+   "conf_known": 34,
+   "sure": 1
+  },
+  "rejected_by_guards": [
+   [
+    "e8686506",
+    "train output hard-coded"
+   ]
+  ],
+  "nvarc_eval_smoke": {
+   "solved": 2.5,
+   "tasks": 4
+  },
+  "changed_outputs": 6
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v13/hidden-shape-arc-2026-v13-progsynth-v3.json",
+ "review": "artifacts/verification/arc-agi-2/v13/review-presubmit-v3.json",
+ "prereg": "artifacts/verification/arc-agi-2/v13/prereg-dev-run-v1.md",
+ "submission_allowed": false,
+ "official_score": null
+}

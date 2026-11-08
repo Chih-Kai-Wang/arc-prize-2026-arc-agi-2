@@ -1,0 +1,36 @@
+{
+ "keys": 30,
+ "rep": null,
+ "exclude_source": "forced",
+ "program_tasks": [],
+ "seeds": {
+  "1": {
+   "before": 6.667,
+   "after": 6.667,
+   "delta": 0.0,
+   "changed_outputs": 0,
+   "per_task_delta": {},
+   "outputs": []
+  },
+  "2": {
+   "before": 7.0,
+   "after": 7.0,
+   "delta": 0.0,
+   "changed_outputs": 0,
+   "per_task_delta": {},
+   "outputs": []
+  },
+  "3": {
+   "before": 6.667,
+   "after": 6.667,
+   "delta": 0.0,
+   "changed_outputs": 0,
+   "per_task_delta": {},
+   "outputs": []
+  }
+ },
+ "delta_mean": 0.0,
+ "lost_correct_nvarc_any": false,
+ "ship_if": "delta non-negative on every seed and no lost correct NVARC answer (API review F2)",
+ "pass": true
+}

@@ -1,0 +1,138 @@
+{
+ "kernel": "f0909172434/arc-2026-fork-boyko-v1",
+ "gates": {
+  "upload_matches_pinned_build": true,
+  "submission_full_coverage_valid": true,
+  "four_workers_started": true,
+  "no_crash_or_traceback": true,
+  "smoke_tasks_finished": true,
+  "passA_rc0": true,
+  "selector_saw_passA_outputs": true,
+  "promote_off": true,
+  "finalizer_ok": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "upload_notebook_sha256": "2f941dde41fba3884843c04ab226305ed4b6a4660da51eea683dc2ea0d509b8b",
+  "source_sha256": "3869a26872c6bb57a9b69809bdaa3ee62c0593eafd905943493add6b7d4eb46c",
+  "edits": [
+   {
+    "cell": 5,
+    "old": "MAX_SECONDS = 12 * 3600 - 900 if RERUN_MODE else 75 * 60",
+    "new": "MAX_SECONDS = 12 * 3600 - 900 if RERUN_MODE else 25 * 60",
+    "why": "commit-mode budget only (GPU quota); rerun branch unchanged"
+   },
+   {
+    "cell": 16,
+    "old": "promote=os.getenv('ARC_ASTRA_PROMOTE','1')=='1'",
+    "new": "promote=os.getenv('ARC_ASTRA_PROMOTE','0')=='1'",
+    "why": "expert promotion off by default = author's scored V17-V20 pure-neural A+B selection"
+   }
+  ],
+  "expected_task_ids": 120,
+  "ranks_started": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "tasks_finished": [
+   {
+    "rank": 2,
+    "task": "0934a4d8",
+    "seconds": 305.0
+   },
+   {
+    "rank": 2,
+    "task": "0934a4d8",
+    "seconds": 305.0
+   },
+   {
+    "rank": 1,
+    "task": "aa4ec2a5",
+    "seconds": 477.8
+   },
+   {
+    "rank": 1,
+    "task": "aa4ec2a5",
+    "seconds": 477.8
+   },
+   {
+    "rank": 3,
+    "task": "981571dc",
+    "seconds": 791.3
+   },
+   {
+    "rank": 3,
+    "task": "981571dc",
+    "seconds": 791.3
+   },
+   {
+    "rank": 0,
+    "task": "36a08778",
+    "seconds": 949.0
+   },
+   {
+    "rank": 0,
+    "task": "36a08778",
+    "seconds": 949.0
+   }
+  ],
+  "crashes": [],
+  "traceback_count": 0,
+  "passes": [
+   "A rc=0 | 4 tasks | 17.7m | remaining=6.7m",
+   "B skipped: tasks=4, remaining=6.7m"
+  ],
+  "selector": [
+   [
+    "5",
+    "5",
+    "0"
+   ],
+   [
+    "5",
+    "5",
+    "0"
+   ]
+  ],
+  "promote": [
+   [
+    "False",
+    "0"
+   ],
+   [
+    "False",
+    "0"
+   ]
+  ],
+  "local_scores": [
+   [
+    "Qwen A+B baseline",
+    "3.0"
+   ],
+   [
+    "Qwen + Astra V22",
+    "3.0"
+   ],
+   [
+    "Qwen A+B baseline",
+    "3.0"
+   ],
+   [
+    "Qwen + Astra V22",
+    "3.0"
+   ]
+  ],
+  "log_chars": 93546,
+  "gpu_lines": [
+   "[starter] tasks=4 | GPUs=4 | order=cheap | remaining_min=24.4 | output=/kaggle/inference_outputs",
+   "[starter] tasks=4 | GPUs=4 | order=cheap | remaining_min=24.4 | output=/kaggle/inference_outputs"
+  ]
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/fork-boyko/hidden-shape-test-v1.json",
+ "review": "artifacts/verification/arc-agi-2/fork-boyko/review-presubmit-v1.json",
+ "submission_allowed": true,
+ "official_score": null
+}

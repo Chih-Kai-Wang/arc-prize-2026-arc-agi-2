@@ -1,0 +1,30 @@
+{
+ "at": "2026-10-05T12:40:33.909279+00:00",
+ "test": "tests/test_arc_agi_2_v6_hidden_shape.py + tests/test_arc_agi_2_v8_pass_b.py (ARC_TEST_SRC=runs/arc-agi-2/v8/src)",
+ "notebook": "runs/arc-agi-2/v8/upload-arc-2026-v8-4b-v2/arc-2026-v8-4b-v2.ipynb",
+ "notebook_sha256": "bb21305fb08e736542476789c53fcac7db68c7233ab16c22e019f18ff013e8b4",
+ "source_sha256": {
+  "arc_v6_config.py": "a31cf4eb2148ab5d78b097bd46f01042be876cd465163db1465c60b3aa88fddb",
+  "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+  "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+  "arc_solver.py": "2b4fb3db4fef3a9d24b80c92574df8dc422cd730eb3bb494161ecb113d47ad66",
+  "starter.py": "f8c82775f25e56782a1692657ea11f9e1901480d0c9668e609fc422931a0ac78",
+  "assemble.py": "f095b58d8171ab8303c2587d28296865312f3839f52b785bfca2a9d51072e569"
+ },
+ "test_sha256": {
+  "tests/test_arc_agi_2_v6_hidden_shape.py": "ab64f6cd4c12386662e9d7d3900d8f29149a88cdb343baf7a34ca7c39cb10f21",
+  "tests/test_arc_agi_2_v8_pass_b.py": "1c81c5c48318862ffd72bb8793579d55a0a99a5e3d0f9c741e5e53894a2762db"
+ },
+ "covers": [
+  "120/240/400 fresh-ID shuffled hidden test files, multi-test inputs, crash/hang/truncated-file faults (v6 suite)",
+  "pass B runs only after pass A, missing-after-A tasks first, own seeds and store; pass A env = v7 defaults",
+  "pooling keeps pass-A top-1, pass B fills the other attempt; B-only tasks take B top-2",
+  "no time left after A: pass B skipped and submission == pass-A top-2 (v7)",
+  "hung pass-B worker killed at deadline; malformed pass-B result falls back to pass-A-only selection",
+  "packaged notebook cells executed end to end (rerun mode, pass B active)",
+  "v2: pass B ends PASS_B_DEADLINE_MARGIN before end_time (hung B worker killed by end_time - margin + grace)",
+  "v2: pass-B order = missing-not-raised, covered, raised-without-output last; failed_after_a logged"
+ ],
+ "result_tail": "2_v8_pass_b.PassB.test_hung_pass_b_worker_is_killed_at_deadline) ... ok\ntest_keep_a_top1_rule (tests.test_arc_agi_2_v8_pass_b.PassB.test_keep_a_top1_rule) ... ok\ntest_pass_b_pools_and_keeps_pass_a_top1 (tests.test_arc_agi_2_v8_pass_b.PassB.test_pass_b_pools_and_keeps_pass_a_top1) ... ok\ntest_pooling_failure_falls_back_to_pass_a (tests.test_arc_agi_2_v8_pass_b.PassB.test_pooling_failure_falls_back_to_pass_a) ... ok\ntest_saturated_run_is_v7 (tests.test_arc_agi_2_v8_pass_b.PassB.test_saturated_run_is_v7)\nNo time left after pass A: pass B never starts and the submission is pass A's top-2. ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 157.495s\n\nOK\n",
+ "passed": true
+}

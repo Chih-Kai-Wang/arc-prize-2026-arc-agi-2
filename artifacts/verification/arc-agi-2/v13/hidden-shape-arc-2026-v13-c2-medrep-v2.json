@@ -1,0 +1,25 @@
+{
+ "at": "2026-10-19T08:30:36.025698+00:00",
+ "kernel": "f0909172434/arc-2026-v13-c2-medrep-v2",
+ "command": "uv run --quiet --no-project --with numpy --with requests python runs/arc-agi-2/v13/tests6/test_v13.py",
+ "returncode": 0,
+ "all_ok_printed": true,
+ "stdout_tail": "fill rule ok\ninvert_aug ok on 120 eval tasks x 6 salts (2148 grids)\nsandbox ok\nguards ok\ninvalid base skip ok\n{\"msg\": \"v13_finalize\", \"finalize\": \"merged\", \"changed_outputs\": 10}\nrerun hidden-shape ok: 11 tasks, 16 outputs, 29 jobs, verified tasks 8, from reasoning 3\ncommit measurement ok {'jobs': 1, 'finished_stop': 0, 'finished_length': 1, 'aborted': 0, 'verified': 1, 'verified_from_reasoning': 1, 'verified_tasks': 1, 'tokens': 25, 'repaired': 0, 'repair_rounds_used': 0, 'tokens_total': 25, 'verified_correct': 1, 'verified_correct_from_reasoning': 1}\n{\"msg\": \"v13_finalize\", \"finalize\": \"merged\", \"changed_outputs\": 0}\n{\"msg\": \"v13_finalize\", \"finalize\": \"error JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)\", \"kept\": \"nothing valid: JSONDecodeError\"}\nskip paths ok\nabort salvage (1) ok {'jobs': 5, 'finished_stop': 0, 'finished_length': 0, 'aborted': 5, 'verified': 4, 'verified_from_reasoning': 4, 'verified_tasks': 4, 'tokens': 0, 'repaired': 0, 'repair_rounds_used': 0, 'tokens_total': 0} 5\nabort salvage (stall) ok {'jobs': 5, 'finished_stop': 0, 'finished_length': 0, 'aborted': 5, 'verified': 4, 'verified_from_reasoning': 4, 'verified_tasks': 4, 'tokens': 0, 'repaired': 0, 'repair_rounds_used': 0, 'tokens_total': 0} 5\nC2 schedule/repair ok: 29 rows, 2 repaired, 17 repair requests, {'jobs': 29, 'finished_stop': 19, 'finished_length': 10, 'aborted': 0, 'verified': 8, 'verified_from_reasoning': 4, 'verified_tasks': 8, 'tokens': 590, 'repaired': 2, 'repair_rounds_used': 17, 'tokens_total': 1015}\nC2 bad flags ok\nC2 effort gate ok: effort medium rejected: {\"error\": \"Unexpected reasoning effort\"}\n{\"msg\": \"v13_finalize\", \"finalize\": \"merged\", \"changed_outputs\": 10}\nrerun hidden-shape ok: 11 tasks, 16 outputs, 28 jobs, verified tasks 8, from reasoning 3\nALL OK\n",
+ "stderr_tail": "",
+ "source_sha256": {
+  "arc_v6_config.py": "2b7bcd095efc3fb26fbd63e027a8a02601fb0acebf2444faf01d32b615656252",
+  "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+  "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+  "arc_solver.py": "2d3087e2def554458d0d6f678fa2051d991267187343a4c455ef9fc156cae6e7",
+  "starter.py": "857b75c2bc6d4d31e8ca2478d31c99429ec514926f996e782971f09c300360b8",
+  "assemble.py": "f095b58d8171ab8303c2587d28296865312f3839f52b785bfca2a9d51072e569",
+  "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+  "progsynth.py": "67e9b520b8e2802808328c808cec5ce23fb61fcdb1b2ecf49b43bfd957d32587",
+  "v13_merge.py": "77981e0cc63f18c1a62b2c4577bdc21feebc0994c7b7c908b3e177d93aa050da",
+  "v13_llm.py": "c2c336ae86cf65e5529db869771c499e0a6b422091339608f4af9a0eb14a8efd",
+  "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+  "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389"
+ },
+ "notebook_sha256": "8ceecfc7807fd0a2ae54a3fc41cfa8f0a234f909b7fb218a1628a760d7df1929",
+ "passed": true
+}

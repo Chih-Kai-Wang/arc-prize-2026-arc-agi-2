@@ -1,0 +1,58 @@
+{
+  "created_at": "2026-10-15T12:30:32.779318+00:00",
+  "kernel": "f0909172434/arc-2026-v13-e4-cap96k-v1",
+  "stage": "v13-e4",
+  "purpose": "E4 offline measurement: natural-stop rate past 64k (cap 96k) on never-stopped keys30 tasks (never submitted)",
+  "approval": "ARC owner 2026-10-15 (user: \u300c\u4f60\u63a5\u4e0b\u4f86\u9084\u6709\u4ec0\u9ebc\u8981\u505a\u8981\u8a08\u5283\u8981\u8a55\u4f30\u7684\uff0c\u90fd\u505a\u5427\u300d); 10/17-week ARC share 40,000 (amendment_2026_10_15d); pre-registration artifacts/verification/arc-agi-2/v13/prereg-e4-cap96k-v1.md",
+  "algorithm": "v13 v2 program channel (src3, force-at 0) at cap 96k on 10 never-stopped keys30 tasks, rep 3; no NVARC",
+  "src_dir": "runs/arc-agi-2/v13/src3",
+  "source_sha256": {
+    "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+    "progsynth.py": "67e9b520b8e2802808328c808cec5ce23fb61fcdb1b2ecf49b43bfd957d32587",
+    "v13_merge.py": "77981e0cc63f18c1a62b2c4577bdc21feebc0994c7b7c908b3e177d93aa050da",
+    "v13_llm.py": "c2cea524775183d73606404e6da4d4bf5013650c4ab65ebd47d667a00caef834",
+    "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+    "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389",
+    "e4-jobs.json": "103e2c3bb6d664dfb8956936e1be72125057bac225377a8f8667b2d9b4fbe15a"
+  },
+  "jobs": {
+    "n": 10,
+    "rep": 3,
+    "cap": 96000,
+    "pool": [
+      "3dc255db",
+      "2b83f449",
+      "5545f144",
+      "dd6b8c4b",
+      "f931b4a8",
+      "332f06d7",
+      "d35bdbdc",
+      "faa9f03d",
+      "80a900e0",
+      "581f7754",
+      "446ef5d2",
+      "7b0280bc",
+      "a251c730",
+      "2c181942",
+      "4e34c42c",
+      "b6f77b65",
+      "142ca369",
+      "cb2d8a2c",
+      "6e4f6532",
+      "13e47133",
+      "e12f9a14",
+      "3e6067c3",
+      "e3721c99"
+    ],
+    "programs": [
+      "runs/arc-agi-2/v6/output-arc-2026-v13-e3-seeds-v1/v13-programs.jsonl",
+      "runs/arc-agi-2/v6/output-arc-2026-v13-progsynth-v2/v13-programs.jsonl"
+    ]
+  },
+  "llm_command": "!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {e4_end_time} --jobs e4-jobs.json --cap 96000",
+  "notebook_sha256": "a0524a0edfd6f1cc43b49343e83af82fa12ddbc112e363382aced58c86185da8",
+  "metadata_sha256": "38776a694512fda03c7180dee7d3c0ce3a56aaf3c01970fd94c8620fbb722894",
+  "commit_wall_seconds": 7500,
+  "planned_commit_wall_seconds": 8100,
+  "official_score": null
+}

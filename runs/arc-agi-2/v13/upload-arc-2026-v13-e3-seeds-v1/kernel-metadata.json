@@ -1,0 +1,25 @@
+{
+  "id": "f0909172434/arc-2026-v13-e3-seeds-v1",
+  "title": "arc 2026 v13 e3 seeds v1",
+  "code_file": "arc-2026-v13-e3-seeds-v1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "competition_sources": [
+    "arc-prize-2026-arc-agi-2"
+  ],
+  "dataset_sources": [
+    "mirzamilanfarabi/arc3-vllm-h100-wheelhouse-v3"
+  ],
+  "kernel_sources": [
+    "f0909172434/arc-2026-py312-fetch-v1"
+  ],
+  "model_sources": [
+    "mikedan7/qwen3-8-27b-fp8-official/PyTorch/hf-fp8/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:320043e14c68293f1c946585b9257123385205a58af4b94b17d31868cae4e868",
+  "machine_shape": "NvidiaL4"
+}

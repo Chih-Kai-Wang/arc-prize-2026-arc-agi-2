@@ -1,0 +1,34 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-e4-cap96k-v1",
+ "jobs_seen": 10,
+ "n80": 10,
+ "k80": 2,
+ "n96": 10,
+ "k96": 4,
+ "q80": 0.2,
+ "q96": 0.4,
+ "proj_d_verified": {
+  "80k_c11": 4.8,
+  "96k_c10": 6.5
+ },
+ "proj_d_verified_reach_frozen": {
+  "80k_c11": 1.9,
+  "96k_c10": 3.6
+ },
+ "stops": 5,
+ "stops_verified": 4,
+ "stops_full_correct": 3,
+ "kv_peak": 0.6783132530120481,
+ "preemptions": 0,
+ "kv_scale": 1.0,
+ "v4_conc": {
+  "80k": 11,
+  "96k": 10
+ },
+ "median_tok_s_over_64k": 18.5544393565442,
+ "guards": {
+  "stop_precision_ok": true
+ },
+ "v4_cap": 96000,
+ "rule": "prereg-e4-cap96k-v1.md (+ amendments 1-3): k = verified natural stops past 64k; inconclusive if n80<8 and n96<8; 96k if k96>=3, n96>=8, d96>d80, d96_frozen>=0; else 80k if k80>=2, n80>=8, d80_frozen>=0; else 64k; stop-precision guard first; KV>=0.95 or preemption -> v4 conc recomputed from the measured peak"
+}

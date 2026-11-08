@@ -1,0 +1,46 @@
+{
+ "note": "v4 variants vs the v3 build: every notebook cell identical except the v13_llm.py call; source_sha256 identical to v3",
+ "variants": {
+  "arc-2026-v13-progsynth-v4-c80": {
+   "differing_cells": [
+    19
+   ],
+   "llm_cell": "_comp_dir = cfg.competition_dir()\n!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {v13_end_time} --comp-dir {_comp_dir} --cap 80000",
+   "llm_args": "--cap 80000",
+   "notebook_sha256": "94bafbd1f5c7dda16e88cd454771ca217f750ab7150244fa43f507275fe6c5ea",
+   "planned_commit_wall_seconds": 7800,
+   "source_sha256_equals_v3": true
+  },
+  "arc-2026-v13-progsynth-v4-c96": {
+   "differing_cells": [
+    19
+   ],
+   "llm_cell": "_comp_dir = cfg.competition_dir()\n!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {v13_end_time} --comp-dir {_comp_dir} --cap 96000",
+   "llm_args": "--cap 96000",
+   "notebook_sha256": "3bb31d995f5743612cfa693de0d7de803b297cdc71b04d63c51fc16ab40f0e3d",
+   "planned_commit_wall_seconds": 7800,
+   "source_sha256_equals_v3": true
+  },
+  "arc-2026-v13-progsynth-v4-c80f": {
+   "differing_cells": [
+    19
+   ],
+   "llm_cell": "_comp_dir = cfg.competition_dir()\n!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {v13_end_time} --comp-dir {_comp_dir} --cap 80000 --force-at 74000 --answer-tokens 6000",
+   "llm_args": "--cap 80000 --force-at 74000 --answer-tokens 6000",
+   "notebook_sha256": "14841a215bf09b9730210cf08e1f794d6e06de934e8cdae7c8075fc449323779",
+   "planned_commit_wall_seconds": 7800,
+   "source_sha256_equals_v3": true
+  },
+  "arc-2026-v13-progsynth-v4-c96f": {
+   "differing_cells": [
+    19
+   ],
+   "llm_cell": "_comp_dir = cfg.competition_dir()\n!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {v13_end_time} --comp-dir {_comp_dir} --cap 96000 --force-at 90000 --answer-tokens 6000",
+   "llm_args": "--cap 96000 --force-at 90000 --answer-tokens 6000",
+   "notebook_sha256": "f84ceaa3f7ae5be1817dd941b8bb09d8efb9ac1e0d20860032c4c7bdb7a129d7",
+   "planned_commit_wall_seconds": 7800,
+   "source_sha256_equals_v3": true
+  }
+ },
+ "v3_llm_cell": "_comp_dir = cfg.competition_dir()\n!PYTHONUNBUFFERED=1 python v13_llm.py --end-time {v13_end_time} --comp-dir {_comp_dir} --force-at 58000 --answer-tokens 6000"
+}

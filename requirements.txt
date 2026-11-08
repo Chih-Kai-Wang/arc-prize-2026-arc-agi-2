@@ -1,0 +1,7 @@
+# Local (CPU) tooling only: building the Kaggle notebooks, the offline replays and the tests.
+# The GPU pipeline itself runs inside the pinned Kaggle Docker image (see README) with the attached
+# Kaggle models / datasets / kernels; nothing below is needed on Kaggle.
+numpy
+nbformat
+requests   # used by the fake-vLLM tests of the v13 LLM phase
+pytest

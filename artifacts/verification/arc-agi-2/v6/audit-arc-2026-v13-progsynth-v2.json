@@ -1,0 +1,110 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-progsynth-v2",
+ "at": "2026-10-14T02:28:26.062659+00:00",
+ "gates": {
+  "build_hashes_match": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "nvarc_assembly_no_error": true,
+  "nvarc_four_workers_clean": true,
+  "llm_not_skipped": true,
+  "llm_setup_ok": true,
+  "llm_jobs_recorded": true,
+  "llm_returned_before_end": true,
+  "notebook_v13_done": true,
+  "test_submission_valid": true,
+  "eval_v13_submission_valid": true,
+  "keys30_verified_correct": true,
+  "precision_floor": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "notebook_sha256": "f93be1261190f4871b48ffb77c1da0fa2e94d299c8a8d573388e4979dc781bf3",
+  "src_dir": "runs/arc-agi-2/v13/src",
+  "commit_wall_seconds": 7200,
+  "ship_rule": {
+   "verified_rows": 4,
+   "verified_correct_rows": 3,
+   "keys30_verified_correct_rows": 3,
+   "verified_tasks": [
+    "2b83f449",
+    "332f06d7",
+    "53fb4810",
+    "dbff022c"
+   ],
+   "correct_tasks": [
+    "332f06d7",
+    "53fb4810",
+    "dbff022c"
+   ],
+   "keys30_correct_tasks": [
+    "332f06d7",
+    "53fb4810",
+    "dbff022c"
+   ],
+   "false_positive_tasks": [
+    "2b83f449"
+   ],
+   "correctness_measured": true,
+   "precision": 0.75
+  },
+  "summary": {
+   "jobs": 26,
+   "finished_stop": 2,
+   "finished_length": 11,
+   "aborted": 13,
+   "verified": 4,
+   "verified_from_reasoning": 2,
+   "verified_tasks": 4,
+   "tokens": 1168567,
+   "verified_correct": 3,
+   "verified_correct_from_reasoning": 1
+  },
+  "cap": 64000,
+  "conc_effective": 13,
+  "effort": "xhigh",
+  "gen_seconds": 4864,
+  "aborted_streams": 13,
+  "server": {
+   "mtp": 2,
+   "eager": false,
+   "startup_seconds": 401,
+   "kv_tokens": 331200
+  },
+  "model_hash": {
+   "files": 67,
+   "missing": [],
+   "mismatched": [],
+   "done": 156.6
+  },
+  "order": {
+   "n": 34,
+   "first": [
+    "20270e3b",
+    "e8686506",
+    "28a6681f",
+    "981571dc",
+    "dbff022c",
+    "3dc255db",
+    "2b83f449",
+    "5545f144",
+    "dd6b8c4b",
+    "f931b4a8"
+   ],
+   "conf_known": 34,
+   "sure": 1
+  },
+  "rejected_by_guards": [],
+  "nvarc_eval_smoke": {
+   "solved": 2.0,
+   "tasks": 4
+  },
+  "changed_outputs": 4
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v13/hidden-shape-arc-2026-v13-progsynth-v2.json",
+ "review": "artifacts/verification/arc-agi-2/v13/review-presubmit-v2.json",
+ "prereg": "artifacts/verification/arc-agi-2/v13/prereg-dev-run-v1.md",
+ "submission_allowed": true,
+ "official_score": null
+}

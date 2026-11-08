@@ -1,0 +1,196 @@
+{
+ "keys": 30,
+ "rep": null,
+ "exclude_source": null,
+ "program_tasks": [
+  "332f06d7",
+  "3dc255db",
+  "53fb4810",
+  "d35bdbdc"
+ ],
+ "seeds": {
+  "1": {
+   "before": 6.667,
+   "after": 6.667,
+   "delta": 0.0,
+   "changed_outputs": 5,
+   "per_task_delta": {
+    "53fb4810": -1.0,
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": true
+    },
+    {
+     "task": "3dc255db",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 1,
+     "kind": "unchanged_in_top2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 2,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "2": {
+   "before": 7.0,
+   "after": 7.0,
+   "delta": 0.0,
+   "changed_outputs": 5,
+   "per_task_delta": {
+    "53fb4810": -1.0,
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": true
+    },
+    {
+     "task": "3dc255db",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 1,
+     "kind": "unchanged_in_top2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 2,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "3": {
+   "before": 6.667,
+   "after": 7.667,
+   "delta": 1.0,
+   "changed_outputs": 5,
+   "per_task_delta": {
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "3dc255db",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 1,
+     "kind": "unchanged_in_top2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "d35bdbdc",
+     "i": 2,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    }
+   ]
+  }
+ },
+ "delta_mean": 0.333,
+ "lost_correct_nvarc_any": true,
+ "ship_if": "delta non-negative on every seed and no lost correct NVARC answer (API review F2)",
+ "pass": false
+}

@@ -1,0 +1,15 @@
+{
+ "id": "f0909172434/arc-2026-py312-fetch-v1",
+ "title": "arc 2026 py312 fetch v1",
+ "code_file": "arc-2026-py312-fetch-v1.ipynb",
+ "language": "python",
+ "kernel_type": "notebook",
+ "is_private": true,
+ "enable_gpu": false,
+ "enable_tpu": false,
+ "enable_internet": true,
+ "competition_sources": [],
+ "dataset_sources": [],
+ "kernel_sources": [],
+ "model_sources": []
+}

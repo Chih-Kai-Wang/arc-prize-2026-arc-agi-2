@@ -1,0 +1,72 @@
+{
+ "keys": 30,
+ "n_tasks": 120,
+ "inner": 4000,
+ "outer": 300,
+ "line": 32.36,
+ "public_A": 32.22,
+ "rule": "switch-candidate only if at c=0.65 median(\u0394=gain_reseed-gain_v8) >= +0.2pp and P(\u0394>0) >= 0.8, and median \u0394 > 0 at c=0.5 and c=0.8; else keep v8 (design-1024-paper-screen-v1.md)",
+ "by_c": {
+  "0.5": {
+   "point": {
+    "gain_reseed": 2.2367569444444446,
+    "gain_v8": 2.678076388888888,
+    "d_v8_mean_pp": -0.2777986111111107,
+    "sd_reseed_pp": 5.029232577105766,
+    "sd_v8_pp": 5.997863640332511,
+    "p_max_ge_line": {
+     "reseed": 0.7064,
+     "v8": 0.7245,
+     "A_alone": 0.4797
+    }
+   },
+   "delta_median": 0.001,
+   "delta_q10_q90": [
+    -3.663,
+    1.963
+   ],
+   "p_delta_pos": 0.5
+  },
+  "0.65": {
+   "point": {
+    "gain_reseed": 2.9154444444444447,
+    "gain_v8": 2.371805555555555,
+    "d_v8_mean_pp": 0.4709097222222226,
+    "sd_reseed_pp": 6.351934219909452,
+    "sd_v8_pp": 6.301258356926718,
+    "p_max_ge_line": {
+     "reseed": 0.75525,
+     "v8": 0.6934,
+     "A_alone": 0.47785
+    }
+   },
+   "delta_median": 0.731,
+   "delta_q10_q90": [
+    -2.677,
+    3.051
+   ],
+   "p_delta_pos": 0.6
+  },
+  "0.8": {
+   "point": {
+    "gain_reseed": 3.5395277777777783,
+    "gain_v8": 2.107256944444444,
+    "d_v8_mean_pp": 1.200763888888889,
+    "sd_reseed_pp": 7.585019114415559,
+    "sd_v8_pp": 6.5757522420776935,
+    "p_max_ge_line": {
+     "reseed": 0.79115,
+     "v8": 0.66625,
+     "A_alone": 0.47455
+    }
+   },
+   "delta_median": 1.144,
+   "delta_q10_q90": [
+    -2.793,
+    3.901
+   ],
+   "p_delta_pos": 0.693
+  }
+ },
+ "pass": false
+}

@@ -1,0 +1,178 @@
+{
+ "off": [
+  "D",
+  "F",
+  "R"
+ ],
+ "active": [
+  "colors_subset_in",
+  "colors_subset_in_plus",
+  "hist_eq",
+  "keep_nonbg",
+  "palette_eq",
+  "shape_same",
+  "shape_transpose",
+  "sym_transpose"
+ ],
+ "dsl": null,
+ "cells": {
+  "E3-s1-r1": {
+   "seed": 1,
+   "rep": 1,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 7.167,
+   "adj": 6.992,
+   "lost_correct": []
+  },
+  "E3-s1-r2": {
+   "seed": 1,
+   "rep": 2,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 9.167,
+   "adj": 8.292,
+   "lost_correct": []
+  },
+  "E6-s1-r1": {
+   "seed": 1,
+   "rep": 1,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 10.667,
+   "adj": 8.147,
+   "lost_correct": []
+  },
+  "E6-s1-r2": {
+   "seed": 1,
+   "rep": 2,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 8.5,
+   "adj": 7.345,
+   "lost_correct": [
+    [
+     "53fb4810",
+     0
+    ]
+   ]
+  },
+  "E3-s2-r1": {
+   "seed": 2,
+   "rep": 1,
+   "S_ha": 7.0,
+   "S_base": 7.0,
+   "S_D": 7.0,
+   "S_all": 7.0,
+   "adj": 7.0,
+   "lost_correct": []
+  },
+  "E3-s2-r2": {
+   "seed": 2,
+   "rep": 2,
+   "S_ha": 7.0,
+   "S_base": 7.0,
+   "S_D": 7.0,
+   "S_all": 10.0,
+   "adj": 8.95,
+   "lost_correct": []
+  },
+  "E6-s2-r1": {
+   "seed": 2,
+   "rep": 1,
+   "S_ha": 7.0,
+   "S_base": 7.0,
+   "S_D": 7.0,
+   "S_all": 11.0,
+   "adj": 8.48,
+   "lost_correct": []
+  },
+  "E6-s2-r2": {
+   "seed": 2,
+   "rep": 2,
+   "S_ha": 7.0,
+   "S_base": 7.0,
+   "S_D": 7.0,
+   "S_all": 8.0,
+   "adj": 7.37,
+   "lost_correct": [
+    [
+     "53fb4810",
+     0
+    ],
+    [
+     "d35bdbdc",
+     1
+    ]
+   ]
+  },
+  "E3-s3-r1": {
+   "seed": 3,
+   "rep": 1,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 6.667,
+   "adj": 6.667,
+   "lost_correct": []
+  },
+  "E3-s3-r2": {
+   "seed": 3,
+   "rep": 2,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 9.667,
+   "adj": 8.617,
+   "lost_correct": []
+  },
+  "E6-s3-r1": {
+   "seed": 3,
+   "rep": 1,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 10.667,
+   "adj": 8.147,
+   "lost_correct": []
+  },
+  "E6-s3-r2": {
+   "seed": 3,
+   "rep": 2,
+   "S_ha": 6.667,
+   "S_base": 6.667,
+   "S_D": 6.667,
+   "S_all": 9.0,
+   "adj": 7.53,
+   "lost_correct": []
+  }
+ },
+ "f_audit": {
+  "false_rejects": [],
+  "true_rejects": [],
+  "checked_correct": 48,
+  "checked_wrong": 24
+ },
+ "summary": {
+  "HA": 6.778,
+  "base_R": 6.778,
+  "S_D": 6.778,
+  "raw": 8.278,
+  "adj": 7.753,
+  "adj_E6_info": 7.837,
+  "r_lost": [],
+  "r_rescued": [],
+  "f_false_rejects": 0,
+  "f_true_rejects": 0,
+  "prog_lost_correct": 0,
+  "pass": false
+ },
+ "sha256": {
+  "invariants.py": "b07f130d7c65c8342a45858c18266ff16e74bb6759b0e0dd4e1a8e5074186f09",
+  "replay_arc1.py": "67e6b67bad8bfa36b71cf255b2fef98354c7bff676ac6cc6f9116ee8c55e4e3a"
+ }
+}

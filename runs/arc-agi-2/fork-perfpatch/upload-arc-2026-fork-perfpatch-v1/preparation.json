@@ -1,0 +1,15 @@
+{
+  "kernel": "f0909172434/arc-2026-fork-perfpatch-v1",
+  "notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4",
+  "metadata_sha256": "876bead0d1605c6a3edd539573c8867dee19ea2bce663a127a3898da15c3544d",
+  "source_sha256": {
+    "arc_loader.py": "d01cd56167e534ae156706ef62ab11662fc7b403964614a7a55131940bde970c",
+    "arc_decoder.py": "965cfd910777d9bbec9681c6c15c5e2ea3924569734248046f5e58f16cb28222",
+    "arc_solver.py": "4308e294f1feff5ce48148658ca8f7186cff2ecc5600fa3c799a2c487acdbec5",
+    "starter.py": "c3f0b49bd7fed7679eb8d128abc07517f4ec423613a8c20f17eb8b8b982ab3d4"
+  },
+  "src_dir": "runs/arc-agi-2/fork-perfpatch/src",
+  "planned_commit_wall_seconds": 2700,
+  "source_notebook": "mikelou1/arc-agi2-lb33-89-minimal-perfpatch",
+  "source_notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4"
+}

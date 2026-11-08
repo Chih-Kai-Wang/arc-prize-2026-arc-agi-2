@@ -1,0 +1,27 @@
+{
+ "passed": true,
+ "command": ".venv/bin/python tests/test_arc_agi_2_fork_hidden_shape.py --write-evidence",
+ "tests": [
+  "test_both_input_counts_present",
+  "test_decoder_api_matches_assembly_cell",
+  "test_hidden_shape_13_tasks",
+  "test_hidden_shape_7_tasks",
+  "test_no_decoded_files_all_fallback",
+  "test_no_hardcoded_ids_outside_commit_branch",
+  "test_rerun_missing_outputs_dir_raises",
+  "test_rerun_queue_is_dynamic_and_complete",
+  "test_single_candidate_leaves_attempt_2_fallback",
+  "test_solver_output_format_matches_decoder_parser"
+ ],
+ "tests_run": 10,
+ "failures": 0,
+ "errors": 0,
+ "at": "2026-10-12T21:29:36+00:00",
+ "src_sha256": {
+  "arc_decoder.py": "965cfd910777d9bbec9681c6c15c5e2ea3924569734248046f5e58f16cb28222",
+  "arc_loader.py": "d01cd56167e534ae156706ef62ab11662fc7b403964614a7a55131940bde970c",
+  "arc_solver.py": "4308e294f1feff5ce48148658ca8f7186cff2ecc5600fa3c799a2c487acdbec5",
+  "starter.py": "c3f0b49bd7fed7679eb8d128abc07517f4ec423613a8c20f17eb8b8b982ab3d4"
+ },
+ "notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4"
+}

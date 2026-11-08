@@ -1,0 +1,116 @@
+{
+ "keys": 30,
+ "rep": 0,
+ "exclude_source": null,
+ "program_tasks": [
+  "7ed72f31",
+  "dfadab01"
+ ],
+ "seeds": {
+  "1": {
+   "before": 6.667,
+   "after": 7.167,
+   "delta": 0.5,
+   "changed_outputs": 2,
+   "per_task_delta": {
+    "7ed72f31": 0.5
+   },
+   "outputs": [
+    {
+     "task": "dfadab01",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 1,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "2": {
+   "before": 7.0,
+   "after": 7.0,
+   "delta": 0.0,
+   "changed_outputs": 1,
+   "per_task_delta": {},
+   "outputs": [
+    {
+     "task": "dfadab01",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 1,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "3": {
+   "before": 6.667,
+   "after": 6.667,
+   "delta": 0.0,
+   "changed_outputs": 1,
+   "per_task_delta": {},
+   "outputs": [
+    {
+     "task": "dfadab01",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "7ed72f31",
+     "i": 1,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    }
+   ]
+  }
+ },
+ "delta_mean": 0.167,
+ "lost_correct_nvarc_any": false,
+ "ship_if": "delta non-negative on every seed and no lost correct NVARC answer (API review F2)",
+ "pass": true
+}

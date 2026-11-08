@@ -1,0 +1,16 @@
+# Competition data is NOT part of this repository: download it from Kaggle / arcprize.org into data/
+data/
+# Large outputs you regenerate yourself (the few small committed outputs are already tracked)
+runs/arc-agi-2/gcp-e1/out/
+runs/arc-agi-2/gcp-e1/build/*.tgz
+# Python / tooling
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+# Credentials never belong here
+kaggle.json
+.env
+*credentials*

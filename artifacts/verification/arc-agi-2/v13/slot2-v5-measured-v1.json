@@ -1,0 +1,22 @@
+{
+ "by": {
+  "cA=0.5,r=1.299": {
+   "cB": 0.649,
+   "delta_point": 0.244,
+   "delta_median": 0.304,
+   "p_delta_pos": 0.535
+  },
+  "cA=0.65,r=1.299": {
+   "cB": 0.844,
+   "delta_point": 1.436,
+   "delta_median": 1.637,
+   "p_delta_pos": 0.705
+  },
+  "cA=0.8,r=1.299": {
+   "cB": 1.0,
+   "delta_point": 2.34,
+   "delta_median": 2.189,
+   "p_delta_pos": 0.775
+  }
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "slug": "arc-2026-fork-boyko-v1",
+ "kernel": "f0909172434/arc-2026-fork-boyko-v1",
+ "purpose": "Boyko V22 fork (promote off = V17-V20 A+B) commit run + slot-2 candidate",
+ "approval": "ARC owner per user 11-01 \u300c\u8b93arc\u5168\u529b\u63a8\u9032\u300d (coordinator relay); prereg artifacts/verification/arc-agi-2/fork-boyko/prereg-boyko-fork-v1.md",
+ "source_notebook": "evgendvorkin/arc-2-2026-4-4-local-boyko-nvarc (V22)",
+ "source_sha256": "3869a26872c6bb57a9b69809bdaa3ee62c0593eafd905943493add6b7d4eb46c",
+ "notebook_sha256": "2f941dde41fba3884843c04ab226305ed4b6a4660da51eea683dc2ea0d509b8b",
+ "metadata_sha256": "076292bb59ad109d6fcc5240ca42dfbfb202ec102fe2dfce5aa2c7ef18556c2d",
+ "edits": [
+  {
+   "cell": 5,
+   "old": "MAX_SECONDS = 12 * 3600 - 900 if RERUN_MODE else 75 * 60",
+   "new": "MAX_SECONDS = 12 * 3600 - 900 if RERUN_MODE else 25 * 60",
+   "why": "commit-mode budget only (GPU quota); rerun branch unchanged"
+  },
+  {
+   "cell": 16,
+   "old": "promote=os.getenv('ARC_ASTRA_PROMOTE','1')=='1'",
+   "new": "promote=os.getenv('ARC_ASTRA_PROMOTE','0')=='1'",
+   "why": "expert promotion off by default = author's scored V17-V20 pure-neural A+B selection"
+  }
+ ],
+ "src_sha256": {
+  "arc_loader.py": "a4b76fb1f62e36e2dc985cd8fd4321c40da98728e18cc80836ee8cc5c5e4f253",
+  "arc_decoder.py": "28b274be53d88439a88bece4abb2aa6dac05fa7cafdaf27fce38dc9aa555ad8b",
+  "arc_solver.py": "c6ac7b6f4fcbf42ceb109e2711341600148913e8fe6c668e0e8cd5423731deb4",
+  "starter.py": "64c3d552dd79168c37d1787632198ac36631c43c2b3db96ade3a1d37f1d66e51",
+  "arc2_d4_tools.py": "50217dbd412498fb822029b108a21f04f7567eb8bf18292df3d9f073257f7757",
+  "candidate_solver.py": "2f4ab8186a612049ae623d2a11ad16a5f15f2def8ce422a001cec1ba41c37d73",
+  "astra_bridge.py": "280477f5c1fc41bc4ecd41dd93f3837b51668b0a328fd2658c208720d1de8871"
+ },
+ "planned_commit_wall_seconds": 2700
+}

@@ -1,0 +1,131 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-c2-medrep-v2",
+ "at": "2026-10-19T10:35:52.804888+00:00",
+ "gates": {
+  "build_hashes_match": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "nvarc_assembly_no_error": true,
+  "nvarc_four_workers_clean": true,
+  "llm_not_skipped": true,
+  "llm_setup_ok": true,
+  "llm_jobs_recorded": true,
+  "llm_returned_before_end": true,
+  "notebook_v13_done": true,
+  "test_submission_valid": true,
+  "eval_v13_submission_valid": true,
+  "keys30_verified_correct": true,
+  "precision_floor": false,
+  "c2_schedule_applied": true,
+  "c2_effort_medium_all_jobs": true,
+  "c2_rep0_cap_enforced": true,
+  "c2_rep_ge1_ran": true,
+  "c2_repair_fired": true,
+  "c2_full_code_stored": true,
+  "c2_no_preemption": true,
+  "c2_kv_peak_le_095": true,
+  "c2_no_job_exceptions": true,
+  "hidden_shape_test_passed": true
+ },
+ "facts": {
+  "notebook_sha256": "8ceecfc7807fd0a2ae54a3fc41cfa8f0a234f909b7fb218a1628a760d7df1929",
+  "src_dir": "runs/arc-agi-2/v13/src6",
+  "commit_wall_seconds": 7000,
+  "ship_rule": {
+   "verified_rows": 3,
+   "verified_correct_rows": 1,
+   "keys30_verified_correct_rows": 1,
+   "verified_tasks": [
+    "28a6681f",
+    "38007db0",
+    "53fb4810"
+   ],
+   "correct_tasks": [
+    "38007db0"
+   ],
+   "keys30_correct_tasks": [
+    "38007db0"
+   ],
+   "false_positive_tasks": [
+    "28a6681f",
+    "53fb4810"
+   ],
+   "correctness_measured": true,
+   "precision": 0.333
+  },
+  "c2": {
+   "jobs": 83,
+   "rep0_done": 34,
+   "rep0_median_tokens": 20000,
+   "repaired": 1,
+   "repair_jobs": 6,
+   "conc_effective": 21,
+   "preemptions_max": 0.0,
+   "kv_peak": 0.673,
+   "effort_smoke": [
+    "medium"
+   ]
+  },
+  "summary": {
+   "jobs": 83,
+   "finished_stop": 10,
+   "finished_length": 56,
+   "aborted": 17,
+   "verified": 3,
+   "verified_from_reasoning": 1,
+   "verified_tasks": 3,
+   "tokens": 2001441,
+   "repaired": 1,
+   "repair_rounds_used": 6,
+   "tokens_total": 2042251,
+   "verified_correct": 1,
+   "verified_correct_from_reasoning": 1
+  },
+  "cap": 32000,
+  "conc_effective": 21,
+  "effort": "medium",
+  "gen_seconds": 5149,
+  "aborted_streams": 17,
+  "server": {
+   "mtp": 2,
+   "eager": false,
+   "startup_seconds": 400,
+   "kv_tokens": 331200
+  },
+  "model_hash": {
+   "files": 67,
+   "missing": [],
+   "mismatched": [],
+   "done": 91.7
+  },
+  "order": {
+   "n": 34,
+   "first": [
+    "20270e3b",
+    "e8686506",
+    "28a6681f",
+    "981571dc",
+    "dbff022c",
+    "3dc255db",
+    "2b83f449",
+    "5545f144",
+    "dd6b8c4b",
+    "f931b4a8"
+   ],
+   "conf_known": 34,
+   "sure": 1
+  },
+  "rejected_by_guards": [],
+  "nvarc_eval_smoke": {
+   "solved": 2.5,
+   "tasks": 4
+  },
+  "changed_outputs": 4,
+  "review": "not required: submission-authority-v1.json strategy_amendment_2026_10_19 R1"
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v13/hidden-shape-arc-2026-v13-c2-medrep-v2.json",
+ "review": "artifacts/verification/arc-agi-2/v13/prereg-c2-effort-repair-v1.md",
+ "prereg": "artifacts/verification/arc-agi-2/v13/prereg-c2-effort-repair-v1.md",
+ "submission_allowed": false,
+ "official_score": null
+}

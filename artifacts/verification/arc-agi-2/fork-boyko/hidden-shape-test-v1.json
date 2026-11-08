@@ -1,0 +1,18 @@
+{
+ "passed": true,
+ "command": ".venv/bin/python tests/test_arc_agi_2_fork_boyko_hidden_shape.py --write-evidence",
+ "tests_run": 8,
+ "failures": 0,
+ "errors": 0,
+ "at": "2026-11-01T12:16:16+00:00",
+ "notebook_sha256": "2f941dde41fba3884843c04ab226305ed4b6a4660da51eea683dc2ea0d509b8b",
+ "src_sha256": {
+  "arc2_d4_tools.py": "50217dbd412498fb822029b108a21f04f7567eb8bf18292df3d9f073257f7757",
+  "arc_decoder.py": "28b274be53d88439a88bece4abb2aa6dac05fa7cafdaf27fce38dc9aa555ad8b",
+  "arc_loader.py": "a4b76fb1f62e36e2dc985cd8fd4321c40da98728e18cc80836ee8cc5c5e4f253",
+  "arc_solver.py": "c6ac7b6f4fcbf42ceb109e2711341600148913e8fe6c668e0e8cd5423731deb4",
+  "astra_bridge.py": "280477f5c1fc41bc4ecd41dd93f3837b51668b0a328fd2658c208720d1de8871",
+  "candidate_solver.py": "2f4ab8186a612049ae623d2a11ad16a5f15f2def8ce422a001cec1ba41c37d73",
+  "starter.py": "64c3d552dd79168c37d1787632198ac36631c43c2b3db96ade3a1d37f1d66e51"
+ }
+}

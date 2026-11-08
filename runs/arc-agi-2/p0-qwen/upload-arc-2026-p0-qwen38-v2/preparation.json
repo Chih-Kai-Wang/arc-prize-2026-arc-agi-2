@@ -1,0 +1,13 @@
+{
+ "kernel": "f0909172434/arc-2026-p0-qwen38-v2",
+ "notebook_sha256": "0d6df3c301e49e047aa0cc5a213dd8759e388889a65c3465c134f2c9d398c0a5",
+ "metadata_sha256": "b197ff4a2942de69f18bd142af07d95a5c7be4225be60d5285099108c7a69aa1",
+ "source_sha256": {
+  "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+  "p0_probe.py": "4c3e107a1638b9108cf89982aaa2ec6a44bda74873c4541807c2a9d1ad3fbf52",
+  "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+  "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389"
+ },
+ "src_dir": "runs/arc-agi-2/p0-qwen/src",
+ "planned_commit_wall_seconds": 12600
+}

@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-13T17:01:36.687202+00:00",
+  "kernel": "f0909172434/arc-2026-v13-progsynth-v2",
+  "stage": "v13",
+  "algorithm": "v11 NVARC pass A (pass B off) + Qwen3.8-27B-FP8 verified program synthesis (attempt_1)",
+  "src_dir": "runs/arc-agi-2/v13/src",
+  "source_sha256": {
+    "arc_v6_config.py": "2b7bcd095efc3fb26fbd63e027a8a02601fb0acebf2444faf01d32b615656252",
+    "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+    "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+    "arc_solver.py": "2d3087e2def554458d0d6f678fa2051d991267187343a4c455ef9fc156cae6e7",
+    "starter.py": "857b75c2bc6d4d31e8ca2478d31c99429ec514926f996e782971f09c300360b8",
+    "assemble.py": "f095b58d8171ab8303c2587d28296865312f3839f52b785bfca2a9d51072e569",
+    "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+    "progsynth.py": "67e9b520b8e2802808328c808cec5ce23fb61fcdb1b2ecf49b43bfd957d32587",
+    "v13_merge.py": "77981e0cc63f18c1a62b2c4577bdc21feebc0994c7b7c908b3e177d93aa050da",
+    "v13_llm.py": "90aa0f0d9f483fd53c86e6c8caf4394dddc7a88d221567a7f4e92a1dab5538ca",
+    "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+    "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389"
+  },
+  "notebook_sha256": "f93be1261190f4871b48ffb77c1da0fa2e94d299c8a8d573388e4979dc781bf3",
+  "metadata_sha256": "183feb3c58f582658756ebed717d10872622a9bfab6a678457de16c0bf3bb821",
+  "commit_wall_seconds": 7200,
+  "planned_commit_wall_seconds": 7800,
+  "official_score": null
+}

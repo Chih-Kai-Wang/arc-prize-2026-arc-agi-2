@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-03T20:24:49.222236+00:00",
+  "kernel": "f0909172434/arc-2026-v6-4b-v2",
+  "stage": "v6",
+  "algorithm": "author sorokin/arc2-qwen3-unsloth-flash-lora-batch4-queue v10 (unchanged search/TTT/scoring)",
+  "source_sha256": {
+    "arc_v6_config.py": "38d082bb07e1267254e14b9df1cf4da74814a8d39a1dc95324e70edd0230efa5",
+    "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+    "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+    "arc_solver.py": "797d5f19d52b36b95f96cd16b513ba3802f4597c4a090180a9abcc64fd4b00eb",
+    "starter.py": "ae19fd250695418d60184afc96f4d9cd131c92965882f52571dbb4b01a7d861c",
+    "assemble.py": "2dae5a96f08e7ba97de0f246db29010701793948a3453d3cbda924eb6212baee"
+  },
+  "notebook_sha256": "ee0d2be0f6667f82d04acaf9040add03a614346bcabc35fc4340dac04b02d518",
+  "metadata_sha256": "01c087d9140cd792bb3bb2b2591e366962665e15bec0959f25f686e534d49a18",
+  "commit_wall_seconds": 3600,
+  "rerun_wall_seconds": 42600,
+  "planned_commit_wall_seconds": 4200,
+  "push_timeout": null,
+  "official_score": null
+}

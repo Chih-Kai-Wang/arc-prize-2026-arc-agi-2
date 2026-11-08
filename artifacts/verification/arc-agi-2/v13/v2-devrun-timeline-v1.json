@@ -1,0 +1,279 @@
+{
+ "source": "v2 dev run (commit, COMMIT_SECONDS 7200, cap 64k)",
+ "gen_start": 647.9,
+ "conc_effective": 13,
+ "summary": {
+  "jobs": 26,
+  "finished_stop": 2,
+  "finished_length": 11,
+  "aborted": 13,
+  "verified": 4,
+  "verified_from_reasoning": 2,
+  "verified_tasks": 4,
+  "tokens": 1168567,
+  "verified_correct": 3,
+  "verified_correct_from_reasoning": 1
+ },
+ "jobs": [
+  {
+   "task": "dbff022c",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 3132.2,
+   "state": "done",
+   "finish_reason": "stop",
+   "completion_tokens": 47069,
+   "verified": true
+  },
+  {
+   "task": "53fb4810",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 3772.2,
+   "state": "done",
+   "finish_reason": "stop",
+   "completion_tokens": 56074,
+   "verified": true
+  },
+  {
+   "task": "981571dc",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 3843.5,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "332f06d7",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4085.8,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": true
+  },
+  {
+   "task": "f931b4a8",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4182.3,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "20270e3b",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4200.5,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "2b83f449",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4249.9,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": true
+  },
+  {
+   "task": "dd6b8c4b",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4257.3,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "d35bdbdc",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4265.0,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "5545f144",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4278.8,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "3dc255db",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4352.0,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "28a6681f",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4364.3,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "e8686506",
+   "rep": 0,
+   "t_start": 648.0,
+   "t_end": 4372.4,
+   "state": "done",
+   "finish_reason": "length",
+   "completion_tokens": 64000,
+   "verified": false
+  },
+  {
+   "task": "58f5dbd5",
+   "rep": 0,
+   "t_start": 3132.4,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 43924,
+   "verified": false
+  },
+  {
+   "task": "faa9f03d",
+   "rep": 0,
+   "t_start": 3772.3,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 31753,
+   "verified": false
+  },
+  {
+   "task": "dfadab01",
+   "rep": 0,
+   "t_start": 3843.5,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 31320,
+   "verified": false
+  },
+  {
+   "task": "80a900e0",
+   "rep": 0,
+   "t_start": 4086.0,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 30292,
+   "verified": false
+  },
+  {
+   "task": "581f7754",
+   "rep": 0,
+   "t_start": 4182.3,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 25213,
+   "verified": false
+  },
+  {
+   "task": "446ef5d2",
+   "rep": 0,
+   "t_start": 4200.7,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 25966,
+   "verified": false
+  },
+  {
+   "task": "7b0280bc",
+   "rep": 0,
+   "t_start": 4250.0,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 25350,
+   "verified": false
+  },
+  {
+   "task": "a251c730",
+   "rep": 0,
+   "t_start": 4257.3,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 26194,
+   "verified": false
+  },
+  {
+   "task": "2c181942",
+   "rep": 0,
+   "t_start": 4265.0,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 24529,
+   "verified": false
+  },
+  {
+   "task": "4e34c42c",
+   "rep": 0,
+   "t_start": 4278.8,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 24880,
+   "verified": false
+  },
+  {
+   "task": "7ed72f31",
+   "rep": 0,
+   "t_start": 4352.0,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 24048,
+   "verified": false
+  },
+  {
+   "task": "b6f77b65",
+   "rep": 0,
+   "t_start": 4364.3,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 23328,
+   "verified": false
+  },
+  {
+   "task": "38007db0",
+   "rep": 0,
+   "t_start": 4372.5,
+   "t_end": 5512.0,
+   "state": "aborted",
+   "finish_reason": null,
+   "completion_tokens": 24627,
+   "verified": false
+  }
+ ]
+}

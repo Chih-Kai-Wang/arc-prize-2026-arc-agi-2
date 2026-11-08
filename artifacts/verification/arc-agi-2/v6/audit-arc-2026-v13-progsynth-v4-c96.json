@@ -1,0 +1,128 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-progsynth-v4-c96",
+ "at": "2026-10-17T07:20:50.315444+00:00",
+ "gates": {
+  "build_hashes_match": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "nvarc_assembly_no_error": true,
+  "nvarc_four_workers_clean": true,
+  "llm_not_skipped": true,
+  "llm_setup_ok": true,
+  "llm_jobs_recorded": true,
+  "llm_returned_before_end": true,
+  "notebook_v13_done": true,
+  "test_submission_valid": true,
+  "eval_v13_submission_valid": true,
+  "keys30_verified_correct": true,
+  "precision_floor": true,
+  "v4_cap_applied": true,
+  "v4_replay_no_harm_vs_ha": true,
+  "v4_no_lost_correct_nvarc": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "notebook_sha256": "3bb31d995f5743612cfa693de0d7de803b297cdc71b04d63c51fc16ab40f0e3d",
+  "src_dir": "runs/arc-agi-2/v13/src3",
+  "commit_wall_seconds": 7200,
+  "ship_rule": {
+   "verified_rows": 3,
+   "verified_correct_rows": 2,
+   "keys30_verified_correct_rows": 1,
+   "verified_tasks": [
+    "28a6681f",
+    "dbff022c",
+    "e8686506"
+   ],
+   "correct_tasks": [
+    "dbff022c",
+    "e8686506"
+   ],
+   "keys30_correct_tasks": [
+    "dbff022c"
+   ],
+   "false_positive_tasks": [
+    "28a6681f"
+   ],
+   "correctness_measured": true,
+   "precision": 0.667
+  },
+  "v4_cap": {
+   "requested": 96000,
+   "summary_cap": 96000
+  },
+  "v4": {
+   "replay": "artifacts/verification/arc-agi-2/v13/replay-arc-2026-v13-progsynth-v4-c96-full.json",
+   "replay_deltas": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "replay_mean": 7.778,
+   "lost_correct_nvarc_any": false,
+   "replay_mean_minus_v2": -1.0
+  },
+  "summary": {
+   "jobs": 12,
+   "finished_stop": 3,
+   "finished_length": 1,
+   "aborted": 8,
+   "verified": 3,
+   "verified_from_reasoning": 0,
+   "forced": 0,
+   "forced_ok": 0,
+   "verified_from_forced": 0,
+   "verified_tasks": 3,
+   "tokens": 914049,
+   "verified_correct": 2,
+   "verified_correct_from_reasoning": 0,
+   "verified_correct_from_forced": 0
+  },
+  "cap": 96000,
+  "conc_effective": 10,
+  "effort": "xhigh",
+  "gen_seconds": 5313,
+  "aborted_streams": 8,
+  "server": {
+   "mtp": 2,
+   "eager": false,
+   "startup_seconds": 400,
+   "kv_tokens": 331200
+  },
+  "model_hash": {
+   "files": 67,
+   "missing": [],
+   "mismatched": [],
+   "done": 98.3
+  },
+  "order": {
+   "n": 34,
+   "first": [
+    "20270e3b",
+    "28a6681f",
+    "e8686506",
+    "981571dc",
+    "dbff022c",
+    "3dc255db",
+    "2b83f449",
+    "5545f144",
+    "dd6b8c4b",
+    "f931b4a8"
+   ],
+   "conf_known": 34,
+   "sure": 1
+  },
+  "rejected_by_guards": [],
+  "nvarc_eval_smoke": {
+   "solved": 2.5,
+   "tasks": 4
+  },
+  "changed_outputs": 2
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v13/hidden-shape-arc-2026-v13-progsynth-v4-c96.json",
+ "review": "artifacts/verification/arc-agi-2/v13/review-presubmit-v4-c96.json",
+ "prereg": "artifacts/verification/arc-agi-2/v13/prereg-dev-run-v1.md",
+ "submission_allowed": true,
+ "official_score": null
+}

@@ -1,0 +1,64 @@
+{
+ "kernel": "f0909172434/arc-2026-fork-perfpatch-v1",
+ "gates": {
+  "byte_identical_fork": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "submission_full_coverage_valid": true,
+  "smoke_ids_have_real_attempt": true,
+  "four_workers_started": true,
+  "no_task_failures": true,
+  "smoke_tasks_finished": true,
+  "final_assembly_completed": true,
+  "reload_score_positive": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "upload_notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4",
+  "source_notebook": "mikelou1/arc-agi2-lb33-89-minimal-perfpatch",
+  "source_notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4",
+  "external_src_notebook_sha256": "ee49384a10a4296dc0bf0670ae67325521f798d5337ed57bee50c8a443a378f4",
+  "expected_task_ids": 120,
+  "ranks_started": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "tasks_finished": [
+   {
+    "rank": 0,
+    "task": "0934a4d8",
+    "seconds": 542.6
+   },
+   {
+    "rank": 3,
+    "task": "aa4ec2a5",
+    "seconds": 632.4
+   },
+   {
+    "rank": 2,
+    "task": "981571dc",
+    "seconds": 1218.3
+   },
+   {
+    "rank": 1,
+    "task": "36a08778",
+    "seconds": 1256.1
+   }
+  ],
+  "task_timeouts": [],
+  "traceback_count": 0,
+  "peak_allocated_mb": 17109,
+  "eval_reload_score": 2.5,
+  "scoring_lines": 30,
+  "decoded_files_in_download": 0,
+  "decoded_smoke_ids": [],
+  "model_licence": "Apache 2.0 (Kaggle model sorokin/qwen3_4b_grids15_sft139 bfloat16 instance licenseName, read 2026-10-12T21:30Z)"
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/fork-perfpatch/hidden-shape-test-v1.json",
+ "review": "artifacts/verification/arc-agi-2/fork-perfpatch/review-presubmit-v1.json",
+ "submission_allowed": true,
+ "official_score": null
+}

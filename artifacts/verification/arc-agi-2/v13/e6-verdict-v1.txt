@@ -1,0 +1,14 @@
+e6: cells [10.667, 11.0, 10.667, 8.5, 8.0, 9.0] raw mean 9.639 SD 1.293 per-rep [10.778, 8.5] lost_correct [False, True]
+e3: cells [7.167, 7.0, 6.667, 9.167, 10.0, 9.667] raw mean 8.278 SD 1.493 per-rep [6.945, 9.611] lost_correct [False, False]
+adj(v4) c96=0.37: 7.837  diff vs 7.753: +0.084
+adj(v4) c96=0.3: 7.636  diff vs 7.753: -0.117
+adj(v4) c96=0.45: 8.065  diff vs 7.753: +0.312
+paired E6-E3 cells [3.5, 4.0, 4.0, -0.667, -2.0, -0.667] mean 1.361 per-rep [3.833, -1.111]
+raw diff >= +1.5 (report flag): False
+rep2 seed1 lost_correct_nvarc tasks: ['53fb4810']
+rep2 seed2 lost_correct_nvarc tasks: ['d35bdbdc', '53fb4810']
+E6 summary: stops 29 length 31 verified 22 verified_correct 15 precision 0.68 verified_tasks 16
+natural stops by length {'<=64k': 11, '80-96k': 11, '64-80k': 7}
+verified rows by finish {'stop': 20, 'length': 2}
+E3 summary (64k, incl rep0 tail): stops 10 length 55 verified 15 verified_correct 10
+kernel elapsed ~33,124 s (log last timestamp); settled 66,254.6 (2.0x); planned 78,320

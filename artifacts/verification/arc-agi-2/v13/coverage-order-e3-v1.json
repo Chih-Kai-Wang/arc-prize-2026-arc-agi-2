@@ -1,0 +1,88 @@
+{
+ "keys": 30,
+ "cells": {
+  "s1-rep1": {
+   "before": 6.667,
+   "gain_tasks": {
+    "7ed72f31": 0.5
+   },
+   "gain_positions": {
+    "7ed72f31": 10
+   },
+   "sure_tasks": 2
+  },
+  "s1-rep2": {
+   "before": 6.667,
+   "gain_tasks": {
+    "dbff022c": 1.0,
+    "80a900e0": 1.0,
+    "4a21e3da": 0.5
+   },
+   "gain_positions": {
+    "dbff022c": 17,
+    "80a900e0": 0,
+    "4a21e3da": 4
+   },
+   "sure_tasks": 2
+  },
+  "s2-rep1": {
+   "before": 7.0,
+   "gain_tasks": {},
+   "gain_positions": {},
+   "sure_tasks": 3
+  },
+  "s2-rep2": {
+   "before": 7.0,
+   "gain_tasks": {
+    "dbff022c": 1.0,
+    "80a900e0": 1.0,
+    "4a21e3da": 1.0
+   },
+   "gain_positions": {
+    "dbff022c": 20,
+    "80a900e0": 0,
+    "4a21e3da": 10
+   },
+   "sure_tasks": 3
+  },
+  "s3-rep1": {
+   "before": 6.667,
+   "gain_tasks": {},
+   "gain_positions": {},
+   "sure_tasks": 2
+  },
+  "s3-rep2": {
+   "before": 6.667,
+   "gain_tasks": {
+    "dbff022c": 1.0,
+    "80a900e0": 1.0,
+    "4a21e3da": 1.0
+   },
+   "gain_positions": {
+    "dbff022c": 25,
+    "80a900e0": 6,
+    "4a21e3da": 10
+   },
+   "sure_tasks": 2
+  }
+ },
+ "means": {
+  "0.5": {
+   "ordered": 7.778,
+   "random_formula": 7.528
+  },
+  "0.65": {
+   "ordered": 7.945,
+   "random_formula": 7.753
+  },
+  "0.8": {
+   "ordered": 8.111,
+   "random_formula": 7.978
+  },
+  "1.0": {
+   "ordered": 8.278,
+   "random_formula": null
+  }
+ },
+ "ha_mean": 6.778
+}

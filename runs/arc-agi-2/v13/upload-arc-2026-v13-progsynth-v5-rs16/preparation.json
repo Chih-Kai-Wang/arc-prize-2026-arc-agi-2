@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-30T13:39:26.628605+00:00",
+  "kernel": "f0909172434/arc-2026-v13-progsynth-v5-rs16",
+  "stage": "v13",
+  "algorithm": "v11 NVARC pass A (pass B off) + Qwen3.8-27B-FP8 verified program synthesis (attempt_1)",
+  "src_dir": "runs/arc-agi-2/v13/src5",
+  "model_profile": "qwen38_27b_fp8",
+  "llm_args": "--seed-tag v13s5 --conc-fixed 16",
+  "nvarc_seed_offset": 3000,
+  "source_sha256": {
+    "arc_v6_config.py": "2b7bcd095efc3fb26fbd63e027a8a02601fb0acebf2444faf01d32b615656252",
+    "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+    "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+    "arc_solver.py": "2d3087e2def554458d0d6f678fa2051d991267187343a4c455ef9fc156cae6e7",
+    "starter.py": "857b75c2bc6d4d31e8ca2478d31c99429ec514926f996e782971f09c300360b8",
+    "assemble.py": "f095b58d8171ab8303c2587d28296865312f3839f52b785bfca2a9d51072e569",
+    "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+    "progsynth.py": "67e9b520b8e2802808328c808cec5ce23fb61fcdb1b2ecf49b43bfd957d32587",
+    "v13_merge.py": "77981e0cc63f18c1a62b2c4577bdc21feebc0994c7b7c908b3e177d93aa050da",
+    "v13_llm.py": "471b808ebba89a2bd546fb2e961039969d704324fc1f77c6c6d56e02c413d952",
+    "model_profiles.py": "adb1c0816e0e6d502f9ce8742cd55b7a4bfe887b9393b0435552508ea6dba633",
+    "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+    "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389"
+  },
+  "notebook_sha256": "0fe50f25b1b2e3deec32434fce2982b9363671e3146a64b002673870ea478e54",
+  "metadata_sha256": "805fbbc17d3487b23fabd8669f22b6a296f91c21ba849cae317d84d3974a2955",
+  "commit_wall_seconds": 7200,
+  "planned_commit_wall_seconds": 7800,
+  "official_score": null
+}

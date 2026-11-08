@@ -1,0 +1,27 @@
+{
+ "limit_s": 10.0,
+ "dsl_sha256": "9ab266d96053c5b75405c587142d351cce761f9caf66ac77db6ef430440184b4",
+ "splits": {
+  "training:100": {
+   "tasks": 100,
+   "verified": 8,
+   "solved": 8,
+   "precision": 1.0,
+   "withheld_disagree": 6,
+   "p95_s": 10.09,
+   "total_s": 880.0,
+   "errors": 0,
+   "solved_tasks": [
+    "007bbfb7",
+    "0520fde7",
+    "08ed6ac7",
+    "0d3d703e",
+    "19bb5feb",
+    "1b2d62fb",
+    "1cf80156",
+    "1d61978c"
+   ],
+   "wrong": []
+  }
+ }
+}

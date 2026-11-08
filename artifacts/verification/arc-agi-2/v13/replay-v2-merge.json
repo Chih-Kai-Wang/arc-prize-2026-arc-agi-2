@@ -1,0 +1,147 @@
+{
+ "keys": 30,
+ "program_tasks": [
+  "2b83f449",
+  "332f06d7",
+  "53fb4810",
+  "dbff022c"
+ ],
+ "seeds": {
+  "1": {
+   "before": 6.667,
+   "after": 8.667,
+   "delta": 2.0,
+   "changed_outputs": 3,
+   "per_task_delta": {
+    "dbff022c": 1.0,
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "dbff022c",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "2b83f449",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "2": {
+   "before": 7.0,
+   "after": 9.0,
+   "delta": 2.0,
+   "changed_outputs": 3,
+   "per_task_delta": {
+    "dbff022c": 1.0,
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "dbff022c",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": false,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "2b83f449",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    }
+   ]
+  },
+  "3": {
+   "before": 6.667,
+   "after": 8.667,
+   "delta": 2.0,
+   "changed_outputs": 3,
+   "per_task_delta": {
+    "dbff022c": 1.0,
+    "332f06d7": 1.0
+   },
+   "outputs": [
+    {
+     "task": "dbff022c",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "53fb4810",
+     "i": 0,
+     "kind": "unchanged_in_top2",
+     "program_correct": true,
+     "nvarc_had_correct": true,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "332f06d7",
+     "i": 0,
+     "kind": "displaced_attempt2",
+     "program_correct": true,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    },
+    {
+     "task": "2b83f449",
+     "i": 0,
+     "kind": "filled_placeholder",
+     "program_correct": false,
+     "nvarc_had_correct": false,
+     "lost_correct_nvarc": false
+    }
+   ]
+  }
+ },
+ "delta_mean": 2.0,
+ "lost_correct_nvarc_any": false,
+ "ship_if": "delta non-negative on every seed and no lost correct NVARC answer (API review F2)",
+ "pass": true
+}

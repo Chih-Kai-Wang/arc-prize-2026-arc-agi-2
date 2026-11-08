@@ -1,0 +1,40 @@
+{
+ "by": {
+  "cA=0.5,r=1.181": {
+   "cB": 0.591,
+   "delta_point": -0.028,
+   "delta_median": -0.002,
+   "p_delta_pos": 0.5
+  },
+  "cA=0.5,r=1.203": {
+   "cB": 0.602,
+   "delta_point": 0.047,
+   "delta_median": 0.339,
+   "p_delta_pos": 0.56
+  },
+  "cA=0.65,r=1.181": {
+   "cB": 0.768,
+   "delta_point": 1.064,
+   "delta_median": 0.998,
+   "p_delta_pos": 0.705
+  },
+  "cA=0.65,r=1.203": {
+   "cB": 0.782,
+   "delta_point": 1.151,
+   "delta_median": 0.999,
+   "p_delta_pos": 0.65
+  },
+  "cA=0.8,r=1.181": {
+   "cB": 0.945,
+   "delta_point": 2.11,
+   "delta_median": 1.459,
+   "p_delta_pos": 0.73
+  },
+  "cA=0.8,r=1.203": {
+   "cB": 0.962,
+   "delta_point": 2.222,
+   "delta_median": 1.968,
+   "p_delta_pos": 0.695
+  }
+ }
+}

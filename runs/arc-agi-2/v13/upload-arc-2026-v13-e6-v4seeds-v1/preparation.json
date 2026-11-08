@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-10-17T18:19:38.163867+00:00",
+  "kernel": "f0909172434/arc-2026-v13-e6-v4seeds-v1",
+  "stage": "v13-e6",
+  "purpose": "E6 offline seeds of the v4-c96 program channel (cap 96k) on keys30 (never submitted)",
+  "approval": "ARC owner session (user 10-17 \u300cGo\uff0c\u4ee5\u5f8c\u90fd\u81ea\u5df1\u6c7a\u5b9a\u300d); reserve per orchestrator 10-17; pre-registration artifacts/verification/arc-agi-2/v13/prereg-e6-v4-seeds-v1.md",
+  "algorithm": "v4-c96 program channel (src3, force-at 0, --cap 96000) on keys30, reps 1+2 interleaved; no NVARC",
+  "src_dir": "runs/arc-agi-2/v13/src3",
+  "source_sha256": {
+    "arc_llm.py": "21a6ca4a6125b805852bbd7cc1c3c239c5dea287320ce79b972433e53dbe72c6",
+    "progsynth.py": "67e9b520b8e2802808328c808cec5ce23fb61fcdb1b2ecf49b43bfd957d32587",
+    "v13_merge.py": "77981e0cc63f18c1a62b2c4577bdc21feebc0994c7b7c908b3e177d93aa050da",
+    "v13_llm.py": "c2cea524775183d73606404e6da4d4bf5013650c4ab65ebd47d667a00caef834",
+    "keys30.json": "74830808ad76be4c6b0294ddaacae5b23206158ef4e550e503cfaade0b463146",
+    "qwen38_fp8_sha256.json": "b21d887158a1ac6897fd5572c5b4974830a6a7800204be12bfcbc3aa2953d389",
+    "e6-jobs.json": "29c0eee256f36f08e9d208c4ff63c1f7d19bbb8bda719201d52196228a330f59"
+  },
+  "jobs": {
+    "n": 60,
+    "seed_reps": [
+      1,
+      2
+    ],
+    "cap": 96000
+  },
+  "notebook_sha256": "c1797eaee9c0c7dd8bd391282a0ea5e458ffa0c854a185580cbbc8adb8d33f4b",
+  "metadata_sha256": "199c83d550df7e29d79c019db34411c301585748347e68a94db7221331726012",
+  "commit_wall_seconds": 35000,
+  "planned_commit_wall_seconds": 35600,
+  "official_score": null
+}

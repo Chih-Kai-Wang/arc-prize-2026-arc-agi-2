@@ -1,0 +1,27 @@
+{
+ "at": "2026-10-08T21:45:50.113653+00:00",
+ "test": [
+  "tests/test_arc_agi_2_v6_hidden_shape.py",
+  "tests/test_arc_agi_2_v9_pass_b.py",
+  "tests/test_arc_agi_2_v11_batches.py"
+ ],
+ "command": "ARC_TEST_SRC=runs/arc-agi-2/v11/src ARC_V9_TEST_SRC=runs/arc-agi-2/v11/src .venv/bin/python -m unittest tests.test_arc_agi_2_v6_hidden_shape tests.test_arc_agi_2_v9_pass_b tests.test_arc_agi_2_v11_batches -v",
+ "notebook": "runs/arc-agi-2/v11/upload-arc-2026-v11-4b-v1/arc-2026-v11-4b-v1.ipynb",
+ "notebook_sha256": "07d41af2f6365052422c8ec841f135bff57fcd9f461e8edbd58bf5cce3451b12",
+ "source_sha256": {
+  "arc_decoder.py": "93e7aeb5c496a05b922728ceb2d955412f17153d26e1808acb6bae1ac668c442",
+  "arc_loader.py": "09e63fe89878fbe627dfd2963fca970a51a3974ace085eb177d3941f077c5471",
+  "arc_solver.py": "2d3087e2def554458d0d6f678fa2051d991267187343a4c455ef9fc156cae6e7",
+  "arc_v6_config.py": "2b7bcd095efc3fb26fbd63e027a8a02601fb0acebf2444faf01d32b615656252",
+  "assemble.py": "f095b58d8171ab8303c2587d28296865312f3839f52b785bfca2a9d51072e569",
+  "starter.py": "857b75c2bc6d4d31e8ca2478d31c99429ec514926f996e782971f09c300360b8"
+ },
+ "cases": [
+  "v6 hidden-shape suite (random IDs/counts/order, crash/hang/truncation, packaged notebook executed)",
+  "v9 pass-B suite on v11 src (plan groups, truncation, fallback, real Colab store; fixtures factor-aware)",
+  "v11 decode batching: 16 views identical to v9 solver code; 8 views equal-length non-empty cover-once; partial views"
+ ],
+ "ran": 15,
+ "passed": true,
+ "result_tail": "views_never_empty (tests.test_arc_agi_2_v11_batches.Batches.test_partial_views_never_empty) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 144.222s\n\nOK\n"
+}

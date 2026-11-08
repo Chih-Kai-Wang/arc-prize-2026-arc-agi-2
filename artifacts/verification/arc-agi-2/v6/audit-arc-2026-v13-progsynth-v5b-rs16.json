@@ -1,0 +1,124 @@
+{
+ "kernel": "f0909172434/arc-2026-v13-progsynth-v5b-rs16",
+ "at": "2026-10-31T05:57:42.206528+00:00",
+ "gates": {
+  "build_hashes_match": true,
+  "metadata_private_offline_l4": true,
+  "metadata_sources_match_build": true,
+  "nvarc_assembly_no_error": true,
+  "nvarc_four_workers_clean": true,
+  "llm_not_skipped": true,
+  "llm_setup_ok": true,
+  "llm_jobs_recorded": true,
+  "llm_returned_before_end": true,
+  "notebook_v13_done": true,
+  "test_submission_valid": true,
+  "eval_v13_submission_valid": true,
+  "keys30_verified_correct": true,
+  "precision_floor": true,
+  "v5_seed_tag_applied": true,
+  "v5_conc_fixed_applied": true,
+  "v5_no_preemption": true,
+  "v5_kv_peak_le_095": true,
+  "v5_jobs_ge_v2": true,
+  "v5_tokens_ge_095_v2": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "notebook_sha256": "e8b329d3958145c611c8013293503100992a7fe735ac5ab806ad68a848f6beaf",
+  "src_dir": "runs/arc-agi-2/v13/src5",
+  "commit_wall_seconds": 7200,
+  "ship_rule": {
+   "verified_rows": 4,
+   "verified_correct_rows": 3,
+   "keys30_verified_correct_rows": 2,
+   "verified_tasks": [
+    "53fb4810",
+    "981571dc",
+    "dfadab01",
+    "f931b4a8"
+   ],
+   "correct_tasks": [
+    "53fb4810",
+    "981571dc",
+    "f931b4a8"
+   ],
+   "keys30_correct_tasks": [
+    "53fb4810",
+    "f931b4a8"
+   ],
+   "false_positive_tasks": [
+    "dfadab01"
+   ],
+   "correctness_measured": true,
+   "precision": 0.75
+  },
+  "v5": {
+   "seed_tag": "v13s7",
+   "conc_effective": 16,
+   "jobs": 32,
+   "tokens": 1476461,
+   "throughput_ratio_vs_v2": 1.263,
+   "preemptions_max": 0.0,
+   "kv_peak": 0.901
+  },
+  "summary": {
+   "jobs": 32,
+   "finished_stop": 4,
+   "finished_length": 12,
+   "aborted": 16,
+   "verified": 4,
+   "verified_from_reasoning": 0,
+   "verified_tasks": 4,
+   "tokens": 1476461,
+   "verified_correct": 3,
+   "verified_correct_from_reasoning": 0
+  },
+  "cap": 64000,
+  "conc_effective": 16,
+  "effort": "xhigh",
+  "gen_seconds": 5212,
+  "aborted_streams": 16,
+  "server": {
+   "mtp": 2,
+   "eager": false,
+   "startup_seconds": 400,
+   "kv_tokens": 331200
+  },
+  "model_hash": {
+   "files": 67,
+   "missing": [],
+   "mismatched": [],
+   "done": 110.6
+  },
+  "order": {
+   "n": 34,
+   "first": [
+    "28a6681f",
+    "20270e3b",
+    "e8686506",
+    "981571dc",
+    "dbff022c",
+    "3dc255db",
+    "2b83f449",
+    "5545f144",
+    "dd6b8c4b",
+    "f931b4a8"
+   ],
+   "conf_known": 34,
+   "sure": 1
+  },
+  "rejected_by_guards": [],
+  "nvarc_eval_smoke": {
+   "solved": 2.0,
+   "tasks": 4
+  },
+  "changed_outputs": 4
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v13/hidden-shape-arc-2026-v13-progsynth-v5b-rs16.json",
+ "review": "artifacts/verification/arc-agi-2/v13/review-presubmit-v5-rs16.json",
+ "prereg": "artifacts/verification/arc-agi-2/v13/prereg-v5-reseed-c16-v1.md",
+ "submission_allowed": true,
+ "official_score": null
+}

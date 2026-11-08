@@ -1,0 +1,30 @@
+ARC Prize 2026 (Kaggle "ARC-AGI-2") solution - f0909172434
+Copyright 2026 f0909172434
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes software derived from the Kaggle notebook
+"sorokin/arc2-qwen3-unsloth-flash-lora-batch4-queue" (version 10),
+https://www.kaggle.com/code/sorokin/arc2-qwen3-unsloth-flash-lora-batch4-queue
+(owner ivan/sorokin, editor CPMP), released under the Apache License 2.0.
+
+  - runs/arc-agi-2/v6/author-v10/ is an unmodified extraction of that notebook's cells.
+  - The following files are MODIFIED derivatives of it (changes by f0909172434, 2026:
+    path discovery, commit/rerun gating, fallback submission, per-task fault isolation,
+    independent worker processes, atomic writes, deadline handling, a second
+    re-seeded pass ("pass B"), confidence-ordered pass B, half-cost TTT width and
+    decode batching, seed/env plumbing):
+      runs/arc-agi-2/{v6,v7,v8,v9,v11}/src/{arc_loader,arc_decoder,arc_solver,starter,assemble}.py
+      runs/arc-agi-2/v13/{src,src3,src5,src6,src7}/{arc_loader,arc_decoder,arc_solver,starter,assemble}.py
+      and the same cells embedded in the notebooks under runs/arc-agi-2/*/upload-*/ .
+    The files are kept byte-identical to what was submitted (their SHA-256 values are
+    recorded in the matching preparation.json), so this NOTICE serves as the
+    "prominent notice" of modification required by Section 4(b) of the License.
+
+This repository also contains copies of two public Kaggle notebooks that were forked
+for experiments (runs/arc-agi-2/fork-perfpatch/, runs/arc-agi-2/fork-boyko/); their
+authors and sources are listed in THIRD_PARTY.md.
+
+No ARC-AGI-2 task files, Kaggle competition data, model weights or wheels are
+included. Upstream models, datasets and kernels used at run time are listed in
+THIRD_PARTY.md with their sources.

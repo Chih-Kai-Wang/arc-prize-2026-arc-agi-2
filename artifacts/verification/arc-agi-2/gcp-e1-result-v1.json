@@ -1,0 +1,79 @@
+{
+ "prereg": "artifacts/verification/arc-agi-2/gcp-1xl4-prereg-v1.json",
+ "keys": 30,
+ "outputs": 50,
+ "per_seed": {
+  "1": {
+   "pass2_task_score": {
+    "F": 9.0,
+    "HA": 6.667,
+    "H_pooled": 7.5
+   },
+   "D_task_score": -1.5,
+   "correct_outputs_in_candidates": {
+    "F": 17,
+    "HA": 12,
+    "HA+HB": 14
+   },
+   "oracle_task_score": {
+    "F": 11.167,
+    "HA": 8.0,
+    "HA+HB": 8.833
+   },
+   "seconds": {
+    "F": 18499,
+    "HA": 9959,
+    "HB": 9517
+   }
+  },
+  "2": {
+   "pass2_task_score": {
+    "F": 5.833,
+    "HA": 7.0,
+    "H_pooled": 7.5
+   },
+   "D_task_score": 1.667,
+   "correct_outputs_in_candidates": {
+    "F": 13,
+    "HA": 14,
+    "HA+HB": 16
+   },
+   "oracle_task_score": {
+    "F": 7.667,
+    "HA": 8.833,
+    "HA+HB": 10.333
+   },
+   "seconds": {
+    "F": 18784,
+    "HA": 9279,
+    "HB": 9953
+   }
+  },
+  "3": {
+   "pass2_task_score": {
+    "F": 8.0,
+    "HA": 6.667,
+    "H_pooled": 7.167
+   },
+   "D_task_score": -0.833,
+   "correct_outputs_in_candidates": {
+    "F": 15,
+    "HA": 12,
+    "HA+HB": 13
+   },
+   "oracle_task_score": {
+    "F": 9.667,
+    "HA": 8.0,
+    "HA+HB": 8.5
+   },
+   "seconds": {
+    "F": 18656,
+    "HA": 10062,
+    "HB": 9400
+   }
+  }
+ },
+ "D_sum": -0.666,
+ "invalid": [],
+ "verdict": "inconclusive"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "f0909172434/arc-2026-fork-boyko-v1",
+  "title": "arc 2026 fork boyko v1",
+  "code_file": "arc-2026-fork-boyko-v1.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [
+    "konstantinboyko/flash-attn-2-8-2"
+  ],
+  "kernel_sources": [
+    "konstantinboyko/unsloth-2025-9-7-torch-2-8-0-py3-12-patched"
+  ],
+  "competition_sources": [
+    "arc-prize-2026-arc-agi-2"
+  ],
+  "model_sources": [
+    "konstantinboyko/qwen3-4b-bfloat16-v02-01-01/Transformers/default/1"
+  ],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "NvidiaL4"
+}

@@ -1,0 +1,139 @@
+{
+ "kernel": "f0909172434/arc-2026-v8-4b-v2",
+ "gates": {
+  "submission_full_coverage_valid": true,
+  "assembly_no_error": true,
+  "four_workers_started": true,
+  "smoke_tasks_finished": true,
+  "no_task_failures": true,
+  "workers_exited_cleanly": true,
+  "pass_b_ran": true,
+  "pass_b_seeds_differ": true,
+  "pooling_no_error": true,
+  "model_produced_outputs": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "ranks_started": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "tasks_finished": [
+   {
+    "rank": 3,
+    "task": "e8686506",
+    "seconds": 104.8
+   },
+   {
+    "rank": 1,
+    "task": "28a6681f",
+    "seconds": 171.6
+   },
+   {
+    "rank": 0,
+    "task": "20270e3b",
+    "seconds": 213.9
+   },
+   {
+    "rank": 2,
+    "task": "981571dc",
+    "seconds": 930.4
+   },
+   {
+    "rank": 3,
+    "task": "e8686506",
+    "seconds": 107.3
+   },
+   {
+    "rank": 0,
+    "task": "20270e3b",
+    "seconds": 225.2
+   },
+   {
+    "rank": 1,
+    "task": "28a6681f",
+    "seconds": 201.1
+   },
+   {
+    "rank": 2,
+    "task": "981571dc",
+    "seconds": 928.4
+   }
+  ],
+  "task_failures": [],
+  "peak_allocated_mb": 17109,
+  "worker_exitcodes": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "eval_smoke": {
+   "solved": 2.0,
+   "tasks": 4,
+   "contaminated_by_pretraining": true
+  },
+  "decoded_files": 61,
+  "pass_b": {
+   "started": true,
+   "skipped": false,
+   "tasks_finished": [
+    {
+     "rank": 3,
+     "task": "e8686506",
+     "seconds": 107.3
+    },
+    {
+     "rank": 0,
+     "task": "20270e3b",
+     "seconds": 225.2
+    },
+    {
+     "rank": 1,
+     "task": "28a6681f",
+     "seconds": 201.1
+    },
+    {
+     "rank": 2,
+     "task": "981571dc",
+     "seconds": 928.4
+    }
+   ],
+   "worker_exitcodes_per_pass": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "eval_smoke_solved_pass_a": 2.0,
+   "outputs_a": 5,
+   "outputs_pooled": 5,
+   "pass_b_files": 65,
+   "changed_vs_pass_a": 1,
+   "ranks_started": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "permutations_a": 32,
+   "permutations_b": 32,
+   "permutations_shared": 0
+  }
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v8/hidden-shape-test-v2.json",
+ "review": "artifacts/verification/arc-agi-2/v8/review-presubmit-v1.json",
+ "submission_allowed": true,
+ "official_score": null
+}

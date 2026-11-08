@@ -1,0 +1,410 @@
+{
+ "inputs": {
+  "stops": [
+   53893.0,
+   55925.0,
+   54858.0,
+   49957.0,
+   56985.0,
+   57364.0,
+   46833.0,
+   42886.0,
+   59434.0,
+   59434.0,
+   47069.0,
+   56074.0
+  ],
+  "censored_at_64k": 66,
+  "v_trunc": 0.09090909090909091,
+  "speed": 18.0,
+  "window_s": 21600,
+  "kv_slots": 1196687.36,
+  "gain_per_verified_tasks": 0.23
+ },
+ "plans": {
+  "lognormal": [
+   {
+    "cap": 64000,
+    "conc": 13,
+    "p_stop": 0.158,
+    "dur_s": 3472,
+    "jobs": 74.4,
+    "verified": 17.4,
+    "kv_peak": 0.73,
+    "d_verified_vs_64k": 0.0,
+    "d_public_pp_est": 0.0
+   },
+   {
+    "cap": 80000,
+    "conc": 13,
+    "p_stop": 0.376,
+    "dur_s": 4127,
+    "jobs": 61.5,
+    "verified": 26.6,
+    "kv_peak": 0.9,
+    "d_verified_vs_64k": 9.2,
+    "d_public_pp_est": 1.76
+   },
+   {
+    "cap": 96000,
+    "conc": 11,
+    "p_stop": 0.597,
+    "dur_s": 4581,
+    "jobs": 46.4,
+    "verified": 29.4,
+    "kv_peak": 0.91,
+    "d_verified_vs_64k": 12.0,
+    "d_public_pp_est": 2.3
+   },
+   {
+    "cap": 96000,
+    "conc": 12,
+    "p_stop": 0.597,
+    "dur_s": 4581,
+    "jobs": 50.6,
+    "verified": 32.0,
+    "kv_peak": 0.99,
+    "d_verified_vs_64k": 14.6,
+    "d_public_pp_est": 2.8
+   },
+   {
+    "cap": 120000,
+    "conc": 9,
+    "p_stop": 0.824,
+    "dur_s": 4952,
+    "jobs": 34.8,
+    "verified": 29.2,
+    "kv_peak": 0.93,
+    "d_verified_vs_64k": 11.8,
+    "d_public_pp_est": 2.26
+   }
+  ],
+  "weibull": [
+   {
+    "cap": 64000,
+    "conc": 13,
+    "p_stop": 0.156,
+    "dur_s": 3469,
+    "jobs": 74.4,
+    "verified": 17.3,
+    "kv_peak": 0.73,
+    "d_verified_vs_64k": 0.0,
+    "d_public_pp_est": 0.0
+   },
+   {
+    "cap": 80000,
+    "conc": 13,
+    "p_stop": 0.451,
+    "dur_s": 4101,
+    "jobs": 62.0,
+    "verified": 31.0,
+    "kv_peak": 0.9,
+    "d_verified_vs_64k": 13.7,
+    "d_public_pp_est": 2.63
+   },
+   {
+    "cap": 96000,
+    "conc": 11,
+    "p_stop": 0.814,
+    "dur_s": 4422,
+    "jobs": 48.2,
+    "verified": 40.1,
+    "kv_peak": 0.91,
+    "d_verified_vs_64k": 22.8,
+    "d_public_pp_est": 4.37
+   },
+   {
+    "cap": 96000,
+    "conc": 12,
+    "p_stop": 0.814,
+    "dur_s": 4422,
+    "jobs": 52.6,
+    "verified": 43.7,
+    "kv_peak": 0.99,
+    "d_verified_vs_64k": 26.4,
+    "d_public_pp_est": 5.06
+   },
+   {
+    "cap": 120000,
+    "conc": 9,
+    "p_stop": 0.997,
+    "dur_s": 4498,
+    "jobs": 38.7,
+    "verified": 38.6,
+    "kv_peak": 0.93,
+    "d_verified_vs_64k": 21.3,
+    "d_public_pp_est": 4.08
+   }
+  ],
+  "lognormal_p10": [
+   {
+    "cap": 64000,
+    "conc": 13,
+    "p_stop": 0.119,
+    "dur_s": 3487,
+    "jobs": 74.0,
+    "verified": 14.7,
+    "kv_peak": 0.73,
+    "d_verified_vs_64k": 0.0,
+    "d_public_pp_est": 0.0
+   },
+   {
+    "cap": 80000,
+    "conc": 13,
+    "p_stop": 0.272,
+    "dur_s": 4205,
+    "jobs": 60.3,
+    "verified": 20.4,
+    "kv_peak": 0.9,
+    "d_verified_vs_64k": 5.7,
+    "d_public_pp_est": 1.09
+   },
+   {
+    "cap": 96000,
+    "conc": 11,
+    "p_stop": 0.446,
+    "dur_s": 4775,
+    "jobs": 44.3,
+    "verified": 22.0,
+    "kv_peak": 0.91,
+    "d_verified_vs_64k": 7.3,
+    "d_public_pp_est": 1.4
+   },
+   {
+    "cap": 96000,
+    "conc": 12,
+    "p_stop": 0.446,
+    "dur_s": 4775,
+    "jobs": 48.3,
+    "verified": 24.0,
+    "kv_peak": 0.99,
+    "d_verified_vs_64k": 9.3,
+    "d_public_pp_est": 1.78
+   },
+   {
+    "cap": 120000,
+    "conc": 9,
+    "p_stop": 0.67,
+    "dur_s": 5356,
+    "jobs": 31.8,
+    "verified": 22.2,
+    "kv_peak": 0.93,
+    "d_verified_vs_64k": 7.5,
+    "d_public_pp_est": 1.44
+   }
+  ]
+ },
+ "stratified": {
+  "reachable_tasks": [
+   "38007db0",
+   "4a21e3da",
+   "53fb4810",
+   "58f5dbd5",
+   "7ed72f31",
+   "dbff022c",
+   "dfadab01"
+  ],
+  "w_reachable": 0.23076923076923078,
+  "trunc_verify": {
+   "reachable": 0.16666666666666666,
+   "never": 0.08333333333333333
+  },
+  "reachable_fit_cdf": {
+   "64000": 0.7,
+   "80000": 0.968,
+   "96000": 0.998
+  },
+  "base_64k_c13": {
+   "cap": 64000,
+   "conc": 13,
+   "q_never": 0.0,
+   "dur_s": 3468,
+   "jobs": 74.5,
+   "per_job": 0.237,
+   "verified": 17.7
+  },
+  "plans": {
+   "80000-c11-q0.0": {
+    "cap": 80000,
+    "conc": 11,
+    "q_never": 0.0,
+    "dur_s": 4178,
+    "jobs": 51.4,
+    "per_job": 0.289,
+    "verified": 14.8,
+    "d_verified_vs_64k": -2.9,
+    "d_public_pp_range": [
+     -0.1,
+     -0.56,
+     -0.85
+    ]
+   },
+   "80000-c11-q0.05": {
+    "cap": 80000,
+    "conc": 11,
+    "q_never": 0.05,
+    "dur_s": 4161,
+    "jobs": 51.6,
+    "per_job": 0.324,
+    "verified": 16.7,
+    "d_verified_vs_64k": -1.0,
+    "d_public_pp_range": [
+     -0.03,
+     -0.19,
+     -0.29
+    ]
+   },
+   "80000-c11-q0.15": {
+    "cap": 80000,
+    "conc": 11,
+    "q_never": 0.15,
+    "dur_s": 4127,
+    "jobs": 52.1,
+    "per_job": 0.394,
+    "verified": 20.5,
+    "d_verified_vs_64k": 2.8,
+    "d_public_pp_range": [
+     0.09,
+     0.54,
+     0.82
+    ]
+   },
+   "80000-c11-q0.3": {
+    "cap": 80000,
+    "conc": 11,
+    "q_never": 0.3,
+    "dur_s": 4076,
+    "jobs": 52.8,
+    "per_job": 0.5,
+    "verified": 26.4,
+    "d_verified_vs_64k": 8.7,
+    "d_public_pp_range": [
+     0.29,
+     1.67,
+     2.54
+    ]
+   },
+   "96000-c10-q0.0": {
+    "cap": 96000,
+    "conc": 10,
+    "q_never": 0.0,
+    "dur_s": 4864,
+    "jobs": 39.4,
+    "per_job": 0.295,
+    "verified": 11.6,
+    "d_verified_vs_64k": -6.1,
+    "d_public_pp_range": [
+     -0.2,
+     -1.17,
+     -1.78
+    ]
+   },
+   "96000-c10-q0.05": {
+    "cap": 96000,
+    "conc": 10,
+    "q_never": 0.05,
+    "dur_s": 4830,
+    "jobs": 39.7,
+    "per_job": 0.33,
+    "verified": 13.1,
+    "d_verified_vs_64k": -4.6,
+    "d_public_pp_range": [
+     -0.15,
+     -0.88,
+     -1.34
+    ]
+   },
+   "96000-c10-q0.15": {
+    "cap": 96000,
+    "conc": 10,
+    "q_never": 0.15,
+    "dur_s": 4762,
+    "jobs": 40.4,
+    "per_job": 0.4,
+    "verified": 16.2,
+    "d_verified_vs_64k": -1.5,
+    "d_public_pp_range": [
+     -0.05,
+     -0.29,
+     -0.44
+    ]
+   },
+   "96000-c10-q0.3": {
+    "cap": 96000,
+    "conc": 10,
+    "q_never": 0.3,
+    "dur_s": 4659,
+    "jobs": 41.4,
+    "per_job": 0.506,
+    "verified": 20.9,
+    "d_verified_vs_64k": 3.2,
+    "d_public_pp_range": [
+     0.11,
+     0.61,
+     0.93
+    ]
+   },
+   "96000-c12-q0.0": {
+    "cap": 96000,
+    "conc": 12,
+    "q_never": 0.0,
+    "dur_s": 4864,
+    "jobs": 47.3,
+    "per_job": 0.295,
+    "verified": 13.9,
+    "d_verified_vs_64k": -3.8,
+    "d_public_pp_range": [
+     -0.13,
+     -0.73,
+     -1.11
+    ]
+   },
+   "96000-c12-q0.05": {
+    "cap": 96000,
+    "conc": 12,
+    "q_never": 0.05,
+    "dur_s": 4830,
+    "jobs": 47.7,
+    "per_job": 0.33,
+    "verified": 15.7,
+    "d_verified_vs_64k": -2.0,
+    "d_public_pp_range": [
+     -0.07,
+     -0.38,
+     -0.58
+    ]
+   },
+   "96000-c12-q0.15": {
+    "cap": 96000,
+    "conc": 12,
+    "q_never": 0.15,
+    "dur_s": 4762,
+    "jobs": 48.4,
+    "per_job": 0.4,
+    "verified": 19.4,
+    "d_verified_vs_64k": 1.7,
+    "d_public_pp_range": [
+     0.06,
+     0.33,
+     0.5
+    ]
+   },
+   "96000-c12-q0.3": {
+    "cap": 96000,
+    "conc": 12,
+    "q_never": 0.3,
+    "dur_s": 4659,
+    "jobs": 49.6,
+    "per_job": 0.506,
+    "verified": 25.1,
+    "d_verified_vs_64k": 7.4,
+    "d_public_pp_range": [
+     0.25,
+     1.42,
+     2.16
+    ]
+   }
+  },
+  "note": "conc from v13_llm formula int(kv/(0.35 cap + 6000)) + 2 with kv 331,200: 64k->13, 80k->11, 96k->10; c12 at 96k is an override (KV est. 0.99). gain/verified range 0.04-0.35 task-score (E3 rep 1 0.167/5 = 0.03, pooled 3.0/13 = 0.23, rep 2 2.83/8 = 0.35)."
+ }
+}

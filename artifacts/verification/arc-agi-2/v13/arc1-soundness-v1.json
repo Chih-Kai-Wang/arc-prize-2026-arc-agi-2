@@ -1,0 +1,262 @@
+{
+ "max_rate": 0.01,
+ "splits": {
+  "training": {
+   "tasks": 1000,
+   "per_invariant": {
+    "colors_subset_in": {
+     "applicable": 750,
+     "violations": 1,
+     "examples": [
+      "6cbe9eb8_0"
+     ]
+    },
+    "colors_subset_in_plus": {
+     "applicable": 280,
+     "violations": 0,
+     "examples": []
+    },
+    "hist_eq": {
+     "applicable": 93,
+     "violations": 0,
+     "examples": []
+    },
+    "keep_nonbg": {
+     "applicable": 273,
+     "violations": 1,
+     "examples": [
+      "39e1d7f9_0"
+     ]
+    },
+    "palette_eq": {
+     "applicable": 489,
+     "violations": 2,
+     "examples": [
+      "2ccd9fef_0",
+      "b74ca5d1_1"
+     ]
+    },
+    "shape_const": {
+     "applicable": 381,
+     "violations": 12,
+     "examples": [
+      "342dd610_0",
+      "36d67576_0",
+      "3befdf3e_0",
+      "447fd412_0",
+      "52fd389e_0"
+     ]
+    },
+    "shape_ratio": {
+     "applicable": 86,
+     "violations": 2,
+     "examples": [
+      "2ccd9fef_0",
+      "2ccd9fef_1"
+     ]
+    },
+    "shape_same": {
+     "applicable": 719,
+     "violations": 0,
+     "examples": []
+    },
+    "subgrid_of_in": {
+     "applicable": 50,
+     "violations": 1,
+     "examples": [
+      "1190e5a7_0"
+     ]
+    },
+    "sym_flip_lr": {
+     "applicable": 61,
+     "violations": 1,
+     "examples": [
+      "cd3c21df_0"
+     ]
+    },
+    "sym_flip_ud": {
+     "applicable": 51,
+     "violations": 2,
+     "examples": [
+      "39a8645d_0",
+      "42f14c03_0"
+     ]
+    },
+    "sym_rot180": {
+     "applicable": 48,
+     "violations": 1,
+     "examples": [
+      "caa06a1f_0"
+     ]
+    },
+    "sym_transpose": {
+     "applicable": 36,
+     "violations": 0,
+     "examples": []
+    }
+   }
+  },
+  "evaluation": {
+   "tasks": 90,
+   "per_invariant": {
+    "colors_subset_in": {
+     "applicable": 106,
+     "violations": 0,
+     "examples": []
+    },
+    "colors_subset_in_plus": {
+     "applicable": 15,
+     "violations": 0,
+     "examples": []
+    },
+    "hist_eq": {
+     "applicable": 8,
+     "violations": 0,
+     "examples": []
+    },
+    "keep_nonbg": {
+     "applicable": 16,
+     "violations": 0,
+     "examples": []
+    },
+    "palette_eq": {
+     "applicable": 64,
+     "violations": 0,
+     "examples": []
+    },
+    "shape_const": {
+     "applicable": 25,
+     "violations": 7,
+     "examples": [
+      "8b9c3697_0",
+      "a25697e4_0",
+      "a25697e4_1",
+      "a32d8b75_0",
+      "a32d8b75_1"
+     ]
+    },
+    "shape_same": {
+     "applicable": 76,
+     "violations": 0,
+     "examples": []
+    },
+    "shape_transpose": {
+     "applicable": 2,
+     "violations": 0,
+     "examples": []
+    },
+    "sym_flip_lr": {
+     "applicable": 1,
+     "violations": 0,
+     "examples": []
+    },
+    "sym_flip_ud": {
+     "applicable": 1,
+     "violations": 0,
+     "examples": []
+    },
+    "sym_rot180": {
+     "applicable": 1,
+     "violations": 0,
+     "examples": []
+    },
+    "sym_transpose": {
+     "applicable": 1,
+     "violations": 0,
+     "examples": []
+    }
+   }
+  }
+ },
+ "combined": {
+  "colors_subset_in": {
+   "applicable": 856,
+   "violations": 1,
+   "rate": 0.0012
+  },
+  "colors_subset_in_plus": {
+   "applicable": 295,
+   "violations": 0,
+   "rate": 0.0
+  },
+  "hist_eq": {
+   "applicable": 101,
+   "violations": 0,
+   "rate": 0.0
+  },
+  "keep_nonbg": {
+   "applicable": 289,
+   "violations": 1,
+   "rate": 0.0035
+  },
+  "palette_eq": {
+   "applicable": 553,
+   "violations": 2,
+   "rate": 0.0036
+  },
+  "shape_const": {
+   "applicable": 406,
+   "violations": 19,
+   "rate": 0.0468
+  },
+  "shape_ratio": {
+   "applicable": 86,
+   "violations": 2,
+   "rate": 0.0233
+  },
+  "shape_same": {
+   "applicable": 795,
+   "violations": 0,
+   "rate": 0.0
+  },
+  "shape_transpose": {
+   "applicable": 2,
+   "violations": 0,
+   "rate": 0.0
+  },
+  "subgrid_of_in": {
+   "applicable": 50,
+   "violations": 1,
+   "rate": 0.02
+  },
+  "sym_flip_lr": {
+   "applicable": 62,
+   "violations": 1,
+   "rate": 0.0161
+  },
+  "sym_flip_ud": {
+   "applicable": 52,
+   "violations": 2,
+   "rate": 0.0385
+  },
+  "sym_rot180": {
+   "applicable": 49,
+   "violations": 1,
+   "rate": 0.0204
+  },
+  "sym_transpose": {
+   "applicable": 37,
+   "violations": 0,
+   "rate": 0.0
+  }
+ },
+ "active": [
+  "colors_subset_in",
+  "colors_subset_in_plus",
+  "hist_eq",
+  "keep_nonbg",
+  "palette_eq",
+  "shape_same",
+  "shape_transpose",
+  "sym_transpose"
+ ],
+ "dropped": [
+  "shape_const",
+  "shape_ratio",
+  "subgrid_of_in",
+  "sym_flip_lr",
+  "sym_flip_ud",
+  "sym_rot180"
+ ],
+ "invariants_sha256": "b07f130d7c65c8342a45858c18266ff16e74bb6759b0e0dd4e1a8e5074186f09"
+}

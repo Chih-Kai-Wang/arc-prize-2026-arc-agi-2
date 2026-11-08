@@ -1,0 +1,159 @@
+{
+ "kernel": "f0909172434/arc-2026-v11-4b-v1",
+ "gates": {
+  "submission_full_coverage_valid": true,
+  "assembly_no_error": true,
+  "four_workers_started": true,
+  "smoke_tasks_finished": true,
+  "no_task_failures": true,
+  "workers_exited_cleanly": true,
+  "pass_b_ran": true,
+  "pass_b_seeds_differ": true,
+  "pass_b_plan_confidence": true,
+  "pooling_no_error": true,
+  "model_produced_outputs": true,
+  "hidden_shape_test_passed": true,
+  "independent_review_go": true
+ },
+ "facts": {
+  "ranks_started": [
+   0,
+   1,
+   2,
+   3
+  ],
+  "tasks_finished": [
+   {
+    "rank": 3,
+    "task": "e8686506",
+    "seconds": 67.9
+   },
+   {
+    "rank": 2,
+    "task": "28a6681f",
+    "seconds": 110.6
+   },
+   {
+    "rank": 0,
+    "task": "20270e3b",
+    "seconds": 140.0
+   },
+   {
+    "rank": 1,
+    "task": "981571dc",
+    "seconds": 642.0
+   },
+   {
+    "rank": 0,
+    "task": "20270e3b",
+    "seconds": 115.3
+   },
+   {
+    "rank": 0,
+    "task": "e8686506",
+    "seconds": 59.3
+   },
+   {
+    "rank": 1,
+    "task": "28a6681f",
+    "seconds": 112.9
+   },
+   {
+    "rank": 2,
+    "task": "981571dc",
+    "seconds": 632.2
+   }
+  ],
+  "task_failures": [],
+  "peak_allocated_mb": 17109,
+  "worker_exitcodes": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "eval_smoke": {
+   "solved": 2.0,
+   "tasks": 4,
+   "contaminated_by_pretraining": true
+  },
+  "decoded_files": 37,
+  "pass_b": {
+   "started": true,
+   "skipped": false,
+   "tasks_finished": [
+    {
+     "rank": 0,
+     "task": "20270e3b",
+     "seconds": 115.3
+    },
+    {
+     "rank": 0,
+     "task": "e8686506",
+     "seconds": 59.3
+    },
+    {
+     "rank": 1,
+     "task": "28a6681f",
+     "seconds": 112.9
+    },
+    {
+     "rank": 2,
+     "task": "981571dc",
+     "seconds": 632.2
+    }
+   ],
+   "worker_exitcodes_per_pass": [
+    [
+     0,
+     0,
+     0,
+     0
+    ],
+    [
+     0,
+     0,
+     0,
+     0
+    ]
+   ],
+   "eval_smoke_solved_pass_a": 2.0,
+   "outputs_a": 5,
+   "outputs_pooled": 5,
+   "pass_b_files": 37,
+   "changed_vs_pass_a": 1,
+   "ranks_started": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "permutations_a": 16,
+   "permutations_b": 16,
+   "permutations_shared": 0,
+   "plan": {
+    "t": 1791497642.2,
+    "msg": "pass_b_start",
+    "tasks": 4,
+    "missing_after_a": 0,
+    "failed_after_a": 0,
+    "seconds_left": 2101,
+    "pass_b_order": "confidence",
+    "missing": 0,
+    "unsure_long": 0,
+    "unsure_short": 3,
+    "sure": 1,
+    "raised": 0,
+    "limit": 4,
+    "planned_sum": 1743,
+    "budget": 7683,
+    "threshold": 5.0,
+    "plan_seconds": 0.7
+   }
+  }
+ },
+ "hidden_shape_test": "artifacts/verification/arc-agi-2/v11/hidden-shape-test-v1.json",
+ "review": "artifacts/verification/arc-agi-2/v11/review-presubmit-v1.json",
+ "submission_allowed": true,
+ "official_score": null
+}
