@@ -94,7 +94,7 @@ This section explains the few machine-learning terms used later.
 **Probability of an answer.** The probability that the model writes a whole grid is the product of the probabilities of its tokens. It is easier to work with the negative log-likelihood (NLL):
 
 ```math
-\mathrm{NLL}(\text{grid}) = -\sum_{\text{tokens } t \text{ of the grid}} \log p(t) \tag{2.1}
+\mathrm{NLL}(\text{grid}) = -\sum_{\text{tokens } t \text{ of the grid}} \log p(t) \qquad (2.1)
 ```
 
 A smaller NLL means the model finds the grid more likely; $\mathrm{NLL} = 0$ means certainty.
@@ -116,7 +116,7 @@ A square has 8 symmetries: 4 rotations, each with or without a reflection. Apply
 For each puzzle, Channel A creates
 
 ```math
-8 \text{ symmetries} \times 8 \text{ colour renamings} = 64 \text{ versions} \tag{3.1}
+8 \text{ symmetries} \times 8 \text{ colour renamings} = 64 \text{ versions} \qquad (3.1)
 ```
 
 and each version gets its own random order of the example pairs. The original notebook uses 16 renamings (128 versions); we used 64 to leave time for Channel B.
@@ -138,7 +138,7 @@ The trained model now reads the test input and writes an output grid. The test i
 For each view, the model searches for every grid whose probability is at least 20%:
 
 ```math
-\mathrm{NLL}(\text{grid}) < -\log 0.2 \approx 1.61 \tag{3.2}
+\mathrm{NLL}(\text{grid}) < -\log 0.2 \approx 1.61 \qquad (3.2)
 ```
 
 The search is affordable because the model may write only 12 different tokens: the digits 0–9, "new line" and "end". A partial grid whose NLL already exceeds the limit is dropped at once. Usually one to a few grids remain. Each of them is rotated and recoloured back to the original orientation of the puzzle.
@@ -155,7 +155,7 @@ For each candidate grid $g$:
 3. combine the two:
 
 ```math
-\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \tag{3.3}
+\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \qquad (3.3)
 ```
 
 The two grids with the highest score become the two attempts.
@@ -247,7 +247,7 @@ Every idea was measured on the same 30 public puzzles, called keys30, with sever
 The hidden set has several times more puzzles than keys30, while Channel B has the same 12 hours. Each puzzle therefore gets fewer attempts than in practice. We corrected for this with a factor $c$ chosen in advance:
 
 ```math
-\text{adjusted} = A + c\,(\text{measured} - A) \tag{7.1}
+\text{adjusted} = A + c\,(\text{measured} - A) \qquad (7.1)
 ```
 
 Here $A$ is the score of Channel A alone. For the submitted version, $A = 6.778$, measured $= 8.278$ and $c = 0.65$, so
@@ -439,7 +439,7 @@ ARC-AGI-2 是一組視覺推理謎題。每一題給出隱藏規則的幾個例�
 **答案的機率。** 模型寫出整張網格的機率，是其中每個 token 機率的乘積。為了方便計算，我們改用負對數似然（NLL）：
 
 ```math
-\mathrm{NLL}(\text{網格}) = -\sum_{\text{網格中的每個 token } t} \log p(t) \tag{2.1}
+\mathrm{NLL}(\text{網格}) = -\sum_{\text{網格中的每個 token } t} \log p(t) \qquad (2.1)
 ```
 
 NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示完全確定。
@@ -461,7 +461,7 @@ NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示
 通道 A 對每一題產生
 
 ```math
-8 \text{ 種對稱} \times 8 \text{ 種顏色命名} = 64 \text{ 個版本} \tag{3.1}
+8 \text{ 種對稱} \times 8 \text{ 種顏色命名} = 64 \text{ 個版本} \qquad (3.1)
 ```
 
 每個版本的例子順序也各自隨機排列。原 notebook 用 16 種顏色命名（128 個版本）；我們用 64 個，把時間留給通道 B。
@@ -483,7 +483,7 @@ NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示
 在每個視角中，模型搜尋所有機率至少 20% 的網格：
 
 ```math
-\mathrm{NLL}(\text{網格}) < -\log 0.2 \approx 1.61 \tag{3.2}
+\mathrm{NLL}(\text{網格}) < -\log 0.2 \approx 1.61 \qquad (3.2)
 ```
 
 這個搜尋負擔得起，因為模型只能寫 12 種 token：數字 0–9、「換行」和「結束」。寫到一半的網格只要 NLL 已超過上限，就立刻捨棄。通常會留下一到數張網格，每一張再轉回原謎題的方向與顏色。
@@ -500,7 +500,7 @@ NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示
 3. 把兩者合成一個分數：
 
 ```math
-\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \tag{3.3}
+\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \qquad (3.3)
 ```
 
 分數最高的兩張網格就是兩次作答。
@@ -592,7 +592,7 @@ Kaggle 在我們看不到的謎題上執行 notebook，第 11 小時當掉就是
 隱藏題組的題數是 keys30 的好幾倍，通道 B 的預算卻一樣是 12 小時，所以每題分到的嘗試比練習時少。我們用一個事先定好的係數 $c$ 修正：
 
 ```math
-\text{修正後} = A + c\,(\text{實測} - A) \tag{7.1}
+\text{修正後} = A + c\,(\text{實測} - A) \qquad (7.1)
 ```
 
 其中 $A$ 是只有通道 A 時的分數。對我們提交的版本，$A = 6.778$、實測 $= 8.278$、$c = 0.65$，所以
