@@ -93,11 +93,11 @@ This section explains the few machine-learning terms used later.
 
 **Probability of an answer.** The probability that the model writes a whole grid is the product of the probabilities of its tokens. It is easier to work with the negative log-likelihood (NLL):
 
-```
-NLL(grid) = − Σ log p(token)        (sum over the tokens of the grid)        (2.1)
+```math
+\mathrm{NLL}(\text{grid}) = -\sum_{\text{tokens } t \text{ of the grid}} \log p(t) \tag{2.1}
 ```
 
-A smaller NLL means the model finds the grid more likely; NLL = 0 means certainty.
+A smaller NLL means the model finds the grid more likely; $\mathrm{NLL} = 0$ means certainty.
 
 **Fine-tuning and LoRA.** Fine-tuning adjusts a trained model on new examples so that it imitates them. LoRA is a cheap way to fine-tune: the original parameters stay fixed, and a small set of extra parameters, called an adapter, is learned on top. An adapter is quick to create and to throw away.
 
@@ -115,8 +115,8 @@ A square has 8 symmetries: 4 rotations, each with or without a reflection. Apply
 
 For each puzzle, Channel A creates
 
-```
-8 symmetries × 8 colour renamings = 64 versions                             (3.1)
+```math
+8 \text{ symmetries} \times 8 \text{ colour renamings} = 64 \text{ versions} \tag{3.1}
 ```
 
 and each version gets its own random order of the example pairs. The original notebook uses 16 renamings (128 versions); we used 64 to leave time for Channel B.
@@ -137,8 +137,8 @@ The trained model now reads the test input and writes an output grid. The test i
 
 For each view, the model searches for every grid whose probability is at least 20%:
 
-```
-NLL(grid) < − log 0.2 ≈ 1.61                                                 (3.2)
+```math
+\mathrm{NLL}(\text{grid}) < -\log 0.2 \approx 1.61 \tag{3.2}
 ```
 
 The search is affordable because the model may write only 12 different tokens: the digits 0–9, "new line" and "end". A partial grid whose NLL already exceeds the limit is dropped at once. Usually one to a few grids remain. Each of them is rotated and recoloured back to the original orientation of the puzzle.
@@ -149,13 +149,13 @@ The search also has a time limit, so in rare cases it stops before finding every
 
 A wrong answer can look likely in one view by accident. A correct answer should look likely in every view, because the rule does not depend on orientation or on colour names. Channel A uses this to rank the candidates.
 
-For each candidate grid g:
-1. count n(g), the number of views in which the search produced g;
-2. disguise the puzzle in 8 new ways, insert g as the answer, and compute its NLL (2.1) in each;
+For each candidate grid $g$:
+1. count $n(g)$, the number of views in which the search produced $g$;
+2. disguise the puzzle in 8 new ways, insert $g$ as the answer, and compute its NLL (2.1) in each;
 3. combine the two:
 
-```
-score(g) = n(g) − (NLL₁(g) + NLL₂(g) + … + NLL₈(g)) / 8                     (3.3)
+```math
+\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \tag{3.3}
 ```
 
 The two grids with the highest score become the two attempts.
@@ -244,16 +244,16 @@ Every idea was measured on the same 30 public puzzles, called keys30, with sever
 
 ### 7.3 Correcting for the larger hidden set
 
-The hidden set has several times more puzzles than keys30, while Channel B has the same 12 hours. Each puzzle therefore gets fewer attempts than in practice. We corrected for this with a factor c chosen in advance:
+The hidden set has several times more puzzles than keys30, while Channel B has the same 12 hours. Each puzzle therefore gets fewer attempts than in practice. We corrected for this with a factor $c$ chosen in advance:
 
-```
-adjusted = A + c × (measured − A)                                            (7.1)
+```math
+\text{adjusted} = A + c\,(\text{measured} - A) \tag{7.1}
 ```
 
-Here A is the score of Channel A alone. For the submitted version, A = 6.778, measured = 8.278 and c = 0.65, so
+Here $A$ is the score of Channel A alone. For the submitted version, $A = 6.778$, measured $= 8.278$ and $c = 0.65$, so
 
-```
-adjusted = 6.778 + 0.65 × (8.278 − 6.778) = 7.753 puzzles out of 30
+```math
+\text{adjusted} = 6.778 + 0.65 \times (8.278 - 6.778) = 7.753 \text{ puzzles out of 30}
 ```
 
 ### 7.4 Deciding in advance
@@ -266,7 +266,7 @@ Before each larger experiment we wrote down what we would measure, which result 
 
 | Idea | Result | Our explanation |
 |---|---|---|
-| Let Channel B reason longer (limit 96k tokens, up from 64k) | Practice score unchanged after the correction (7.84 vs 7.75); one public reading 3.19 points lower | Longer attempts mean fewer attempts and fewer puzzles reached in 12 hours; the factor c in (7.1) fell from 0.65 to 0.37. We could not separate this from wrong programs replacing correct answers. |
+| Let Channel B reason longer (limit 96k tokens, up from 64k) | Practice score unchanged after the correction (7.84 vs 7.75); one public reading 3.19 points lower | Longer attempts mean fewer attempts and fewer puzzles reached in 12 hours; the factor $c$ in (7.1) fell from 0.65 to 0.37. We could not separate this from wrong programs replacing correct answers. |
 | Force Channel B to reason less | 7.11 vs 8.78 in practice | Hard rules need long reasoning; cutting it lost more than it gained. |
 | A lower "reasoning effort" setting plus one round of feedback | about 1 puzzle worse | More attempts were logged and fewer programs were verified. The exact cause was not isolated. |
 | A hand-written search over simple grid operations | no change | Most likely it solved only puzzles the other channels already solved. |
@@ -438,11 +438,11 @@ ARC-AGI-2 是一組視覺推理謎題。每一題給出隱藏規則的幾個例�
 
 **答案的機率。** 模型寫出整張網格的機率，是其中每個 token 機率的乘積。為了方便計算，我們改用負對數似然（NLL）：
 
-```
-NLL(網格) = − Σ log p(token)        （對網格中每個 token 加總）               (2.1)
+```math
+\mathrm{NLL}(\text{網格}) = -\sum_{\text{網格中的每個 token } t} \log p(t) \tag{2.1}
 ```
 
-NLL 越小，表示模型認為這張網格越可能；NLL = 0 表示完全確定。
+NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示完全確定。
 
 **微調與 LoRA。** 微調是用新的例子調整已訓練好的模型，讓它模仿這些例子。LoRA 是一種便宜的微調方式：原本的參數保持不動，另外學一小組疊加上去的參數，稱為 adapter。adapter 可以很快建立，也可以很快丟掉。
 
@@ -460,8 +460,8 @@ NLL 越小，表示模型認為這張網格越可能；NLL = 0 表示完全確�
 
 通道 A 對每一題產生
 
-```
-8 種對稱 × 8 種顏色命名 = 64 個版本                                          (3.1)
+```math
+8 \text{ 種對稱} \times 8 \text{ 種顏色命名} = 64 \text{ 個版本} \tag{3.1}
 ```
 
 每個版本的例子順序也各自隨機排列。原 notebook 用 16 種顏色命名（128 個版本）；我們用 64 個，把時間留給通道 B。
@@ -482,8 +482,8 @@ NLL 越小，表示模型認為這張網格越可能；NLL = 0 表示完全確�
 
 在每個視角中，模型搜尋所有機率至少 20% 的網格：
 
-```
-NLL(網格) < − log 0.2 ≈ 1.61                                                 (3.2)
+```math
+\mathrm{NLL}(\text{網格}) < -\log 0.2 \approx 1.61 \tag{3.2}
 ```
 
 這個搜尋負擔得起，因為模型只能寫 12 種 token：數字 0–9、「換行」和「結束」。寫到一半的網格只要 NLL 已超過上限，就立刻捨棄。通常會留下一到數張網格，每一張再轉回原謎題的方向與顏色。
@@ -494,13 +494,13 @@ NLL(網格) < − log 0.2 ≈ 1.61                                              
 
 錯的答案可能碰巧在某個視角裡看起來很可能。對的答案應該在每一個視角裡都很可能，因為規則和方向、顏色名稱無關。通道 A 用這一點替候選答案排序。
 
-對每張候選網格 g：
-1. 數出 n(g)：搜尋在幾個視角中產生了 g；
-2. 把謎題用 8 種新方式偽裝，放入 g 當答案，在每一種偽裝下計算它的 NLL（式 2.1）；
+對每張候選網格 $g$：
+1. 數出 $n(g)$：搜尋在幾個視角中產生了 $g$；
+2. 把謎題用 8 種新方式偽裝，放入 $g$ 當答案，在每一種偽裝下計算它的 NLL（式 2.1）；
 3. 把兩者合成一個分數：
 
-```
-score(g) = n(g) − (NLL₁(g) + NLL₂(g) + … + NLL₈(g)) / 8                     (3.3)
+```math
+\mathrm{score}(g) = n(g) - \frac{1}{8}\sum_{k=1}^{8} \mathrm{NLL}_k(g) \tag{3.3}
 ```
 
 分數最高的兩張網格就是兩次作答。
@@ -589,16 +589,16 @@ Kaggle 在我們看不到的謎題上執行 notebook，第 11 小時當掉就是
 
 ### 7.3 修正隱藏題組較大的影響
 
-隱藏題組的題數是 keys30 的好幾倍，通道 B 的預算卻一樣是 12 小時，所以每題分到的嘗試比練習時少。我們用一個事先定好的係數 c 修正：
+隱藏題組的題數是 keys30 的好幾倍，通道 B 的預算卻一樣是 12 小時，所以每題分到的嘗試比練習時少。我們用一個事先定好的係數 $c$ 修正：
 
-```
-修正後 = A + c × (實測 − A)                                                 (7.1)
+```math
+\text{修正後} = A + c\,(\text{實測} - A) \tag{7.1}
 ```
 
-其中 A 是只有通道 A 時的分數。對我們提交的版本，A = 6.778、實測 = 8.278、c = 0.65，所以
+其中 $A$ 是只有通道 A 時的分數。對我們提交的版本，$A = 6.778$、實測 $= 8.278$、$c = 0.65$，所以
 
-```
-修正後 = 6.778 + 0.65 × (8.278 − 6.778) = 7.753 題（共 30 題）
+```math
+\text{修正後} = 6.778 + 0.65 \times (8.278 - 6.778) = 7.753 \text{ 題（共 30 題）}
 ```
 
 ### 7.4 事先決定
@@ -611,7 +611,7 @@ Kaggle 在我們看不到的謎題上執行 notebook，第 11 小時當掉就是
 
 | 想法 | 結果 | 我們的解釋 |
 |---|---|---|
-| 讓通道 B 推理更久（上限從 64k 提高到 96k token） | 修正後練習分數不變（7.84 對 7.75）；一次公開讀數低 3.19 分 | 嘗試變長，12 小時內能做的嘗試與能處理的題目變少；式 (7.1) 的係數 c 從 0.65 降到 0.37。我們無法把這個原因和「錯的程式取代了正確答案」分開。 |
+| 讓通道 B 推理更久（上限從 64k 提高到 96k token） | 修正後練習分數不變（7.84 對 7.75）；一次公開讀數低 3.19 分 | 嘗試變長，12 小時內能做的嘗試與能處理的題目變少；式 (7.1) 的係數 $c$ 從 0.65 降到 0.37。我們無法把這個原因和「錯的程式取代了正確答案」分開。 |
 | 強迫通道 B 少推理 | 練習分數 7.11 對 8.78 | 難的規則需要長時間推理，砍掉後失去的比得到的多。 |
 | 較低的「推理強度」設定加一輪回饋 | 約少解 1 題 | 記錄到的嘗試變多，通過驗證的程式變少。確切原因沒有分離出來。 |
 | 手寫的簡單網格操作搜尋 | 沒有變化 | 它能解的題目，很可能其他通道已經解出。 |
