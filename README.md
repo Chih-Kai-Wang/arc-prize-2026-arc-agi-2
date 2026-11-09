@@ -94,10 +94,10 @@ This section explains the few machine-learning terms used later.
 **Probability of an answer.** The probability that the model writes a whole grid is the product of the probabilities of its tokens. It is easier to work with the negative log-likelihood (NLL):
 
 ```math
-\mathrm{NLL}(\text{grid}) = -\sum_{\text{tokens } t \text{ of the grid}} \log p(t) \qquad (2.1)
+\mathrm{NLL}(\text{grid}) = -\sum_{t} \log p(t) \qquad (2.1)
 ```
 
-A smaller NLL means the model finds the grid more likely; $\mathrm{NLL} = 0$ means certainty.
+where $t$ runs over the tokens of the grid. A smaller NLL means the model finds the grid more likely; $\mathrm{NLL} = 0$ means certainty.
 
 **Fine-tuning and LoRA.** Fine-tuning adjusts a trained model on new examples so that it imitates them. LoRA is a cheap way to fine-tune: the original parameters stay fixed, and a small set of extra parameters, called an adapter, is learned on top. An adapter is quick to create and to throw away.
 
@@ -439,10 +439,10 @@ ARC-AGI-2 是一組視覺推理謎題。每一題給出隱藏規則的幾個例�
 **答案的機率。** 模型寫出整張網格的機率，是其中每個 token 機率的乘積。為了方便計算，我們改用負對數似然（NLL）：
 
 ```math
-\mathrm{NLL}(\text{網格}) = -\sum_{\text{網格中的每個 token } t} \log p(t) \qquad (2.1)
+\mathrm{NLL}(\text{網格}) = -\sum_{t} \log p(t) \qquad (2.1)
 ```
 
-NLL 越小，表示模型認為這張網格越可能；$\mathrm{NLL} = 0$ 表示完全確定。
+其中 $t$ 走過網格中的每個 token。NLL 越小，表示模型認為這張網格越可能，而 $\mathrm{NLL} = 0$ 表示完全確定。
 
 **微調與 LoRA。** 微調是用新的例子調整已訓練好的模型，讓它模仿這些例子。LoRA 是一種便宜的微調方式：原本的參數保持不動，另外學一小組疊加上去的參數，稱為 adapter。adapter 可以很快建立，也可以很快丟掉。
 
@@ -595,7 +595,7 @@ Kaggle 在我們看不到的謎題上執行 notebook，第 11 小時當掉就是
 \text{修正後} = A + c\,(\text{實測} - A) \qquad (7.1)
 ```
 
-其中 $A$ 是只有通道 A 時的分數。對我們提交的版本，$A = 6.778$、實測 $= 8.278$、$c = 0.65$，所以
+其中 $A$ 是只有通道 A 時的分數。對我們提交的版本， $A = 6.778$ ，實測值 $= 8.278$ ， $c = 0.65$ ，所以
 
 ```math
 \text{修正後} = 6.778 + 0.65 \times (8.278 - 6.778) = 7.753 \text{ 題（共 30 題）}
